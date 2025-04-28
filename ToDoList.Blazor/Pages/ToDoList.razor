@@ -1,0 +1,41 @@
+@page "/todolist"
+@inject ToDoService ToDoService
+
+<h3>ToDo List</h3>
+
+<ul>
+    @foreach (var item in todoItems)
+    {
+        <li>
+            @item.Title
+            <button @onclick="() => DeleteItem(item.Id)">Delete</button>
+        </li>
+    }
+</ul>
+
+<input @bind="newItemTitle" placeholder="New ToDo Item" />
+<button @onclick="AddItem">Add</button>
+
+@code {
+    private List<TodoItem> todoItems = new List<TodoItem>();
+    private string newItemTitle;
+
+    protected override async Task OnInitializedAsync()
+    {
+        todoItems = await ToDoService.GetTodoItemsAsync();
+    }
+
+    private async Task AddItem()
+    {
+        var newItem = new TodoItem { Title = newItemTitle, IsCompleted = false };
+        await ToDoService.AddTodoItemAsync(newItem);
+        todoItems = await ToDoService.GetTodoItemsAsync();
+        newItemTitle = string.Empty;
+    }
+
+    private async Task DeleteItem(int id)
+    {
+        await ToDoService.DeleteTodoItemAsync(id);
+        todoItems = await ToDoService.GetTodoItemsAsync();
+    }
+}
