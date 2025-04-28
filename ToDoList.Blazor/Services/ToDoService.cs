@@ -1,38 +1,45 @@
 using System.Net.Http;
 using System.Net.Http.Json;
 using System.Threading.Tasks;
-using System.Collections.Generic;
-using ToDoList.Blazor;
+using Models;
 
-public class ToDoService
+namespace Services
 {
-    private readonly HttpClient _httpClient;
-
-    public ToDoService(HttpClient httpClient)
+    public class ToDoService
     {
-        _httpClient = httpClient;
-    }
+        private readonly HttpClient _httpClient;
 
-    public async Task<List<TodoItem>> GetTodoItemsAsync()
-    {
-        var items = await _httpClient.GetFromJsonAsync<List<TodoItem>>("https://localhost:5001/api/todo");
-        return items ?? new List<TodoItem>();
-    }
+        public ToDoService(HttpClient httpClient)
+        {
+            _httpClient = httpClient;
+        }
 
-    public async Task AddTodoItemAsync(TodoItem item)
-    {
-        await _httpClient.PostAsJsonAsync("https://localhost:5001/api/todo", item);
-    }
+        public async Task<List<ToDoItem>> GetAllToDoItemsAsync()
+        {
+            return await _httpClient.GetFromJsonAsync<List<ToDoItem>>("api/ToDo");
+        }
 
-    public async Task DeleteTodoItemAsync(int id)
-    {
-        await _httpClient.DeleteAsync($"https://localhost:5001/api/todo/{id}");
-    }
-}
+        public async Task<ToDoItem> GetToDoItemByIdAsync(int id)
+        {
+            return await _httpClient.GetFromJsonAsync<ToDoItem>($"api/ToDo/{id}");
+        }
 
-public class TodoItem
-{
-    public int Id { get; set; }
-    public required string Title { get; set; }
-    public bool IsCompleted { get; set; }
+        public async Task AddToDoItemAsync(ToDoItem toDoItem)
+        {
+            var response = await _httpClient.PostAsJsonAsync("api/ToDo", toDoItem);
+            response.EnsureSuccessStatusCode();
+        }
+
+        public async Task UpdateToDoItemAsync(ToDoItem toDoItem)
+        {
+            var response = await _httpClient.PutAsJsonAsync($"api/ToDo/{toDoItem.Id}", toDoItem);
+            response.EnsureSuccessStatusCode();
+        }
+
+        public async Task DeleteToDoItemAsync(int id)
+        {
+            var response = await _httpClient.DeleteAsync($"api/ToDo/{id}");
+            response.EnsureSuccessStatusCode();
+        }
+    }
 }

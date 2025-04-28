@@ -1,0 +1,32 @@
+﻿@page "/todolist"
+@inject ToDoService ToDoService
+@using Models
+
+<h3>To-Do List</h3>
+
+<button @onclick="LoadToDoItems">Carica attività</button>
+
+@if (toDoItems == null)
+{
+    <p>Loading...</p>
+}
+else
+{
+    <ul>
+        @foreach (var item in toDoItems)
+        {
+            <li>@item.Title - @(item.IsDone ? "Completato" : "Da fare")</li>
+        }
+    </ul>
+}
+
+@code {
+    private List<ToDoItem> toDoItems = new();
+
+    // Carica le attività tramite il servizio
+    private async Task LoadToDoItems()
+    {
+        toDoItems = await ToDoService.GetAllToDoItemsAsync();
+    }
+}
+
