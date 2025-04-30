@@ -1,0 +1,65 @@
+@page "/login"
+@using ToDoApi.Models
+@inject AuthService AuthService
+@inject NavigationManager _navigation
+@rendermode RenderMode.InteractiveServer
+
+<PageTitle>Login</PageTitle>
+
+<h1>Login Form</h1>
+
+<EditForm Model="@loginModel" OnValidSubmit="@HandleLogin" FormName="EditForm">
+    <DataAnnotationsValidator />
+
+    <div class="form-group">
+        <label>Email</label>
+        <InputText class="form-control" @bind-Value="@loginModel.Email" />
+    </div>
+    <div class="form-group">
+        <label>Password</label>
+        <InputText class="form-control" type="password" @bind-Value="@loginModel.Password" />
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Login</button>
+    </div>
+</EditForm>
+
+@if (!string.IsNullOrEmpty(ErrorMessage))
+{
+    <div class="alert alert-danger">@ErrorMessage</div>
+}
+
+@code {
+    private LoginModel loginModel = new LoginModel();
+    private string ErrorMessage = "";
+    private bool _jsInteropEnabled = false;
+
+    protected override void OnAfterRender(bool firstRender)
+    {
+        if (firstRender && !_jsInteropEnabled)
+        {
+            AuthService.EnableJsInterop();
+            _jsInteropEnabled = true;
+        }
+    }
+
+    private async Task HandleLogin()
+    {
+        var result = await AuthService.LoginAsync(loginModel.Email, loginModel.Password);
+
+        if (result.IsSuccess)
+        {
+            _navigation.NavigateTo("/todolist");
+        }
+        else
+        {
+            ErrorMessage = result.ErrorMessage;
+        }
+    }
+
+    public class LoginModel
+    {
+        public string Email { get; set; }
+        public string Password { get; set; }
+    }
+}

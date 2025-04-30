@@ -1,11 +1,23 @@
 {
   "Version": 1,
-  "Hash": "59LWRWjFSrigqaZp1N6BD2w4RQYg8+9qywquwHn20Qg=",
+  "Hash": "jVGEVkvpdnzMn9I8NMu6ysp8eetvFAF9+2mbBITLWIg=",
   "Source": "ToDoList.Blazor",
   "BasePath": "_content/ToDoList.Blazor",
   "Mode": "Default",
   "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.WebApi\\ToDoList.WebApi.csproj",
+      "Version": 2,
+      "Source": "ToDoList.WebApi",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
+    }
+  ],
   "DiscoveryPatterns": [
     {
       "Name": "ToDoList.Blazor\\wwwroot",
@@ -15530,7 +15542,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 28 Apr 2025 14:38:35 GMT"
+          "Value": "Tue, 29 Apr 2025 08:02:09 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15583,7 +15595,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 28 Apr 2025 14:38:35 GMT"
+          "Value": "Tue, 29 Apr 2025 08:02:09 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15620,7 +15632,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 28 Apr 2025 14:38:35 GMT"
+          "Value": "Tue, 29 Apr 2025 08:02:09 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15667,7 +15679,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 28 Apr 2025 14:38:35 GMT"
+          "Value": "Tue, 29 Apr 2025 08:02:09 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15728,7 +15740,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 28 Apr 2025 14:38:35 GMT"
+          "Value": "Tue, 29 Apr 2025 08:02:09 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15773,7 +15785,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 28 Apr 2025 14:38:35 GMT"
+          "Value": "Tue, 29 Apr 2025 08:02:09 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15828,7 +15840,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 28 Apr 2025 14:38:35 GMT"
+          "Value": "Tue, 29 Apr 2025 08:02:09 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15889,7 +15901,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 28 Apr 2025 14:38:35 GMT"
+          "Value": "Tue, 29 Apr 2025 08:02:09 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15934,7 +15946,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 28 Apr 2025 14:38:35 GMT"
+          "Value": "Tue, 29 Apr 2025 08:02:09 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15989,7 +16001,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 28 Apr 2025 14:38:35 GMT"
+          "Value": "Tue, 29 Apr 2025 08:02:09 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -16042,7 +16054,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 28 Apr 2025 14:38:35 GMT"
+          "Value": "Tue, 29 Apr 2025 08:02:09 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -16079,7 +16091,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 28 Apr 2025 14:38:35 GMT"
+          "Value": "Tue, 29 Apr 2025 08:02:09 GMT"
         },
         {
           "Name": "Cache-Control",

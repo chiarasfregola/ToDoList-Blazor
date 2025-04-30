@@ -169,3 +169,4 @@ C:\Users\msfregola\OneDrive - Contrader Srl\Desktop\cs12dotnet8\ToDoList\ToDoLis
 C:\Users\msfregola\OneDrive - Contrader Srl\Desktop\cs12dotnet8\ToDoList\ToDoList.WebApi\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\msfregola\OneDrive - Contrader Srl\Desktop\cs12dotnet8\ToDoList\ToDoList.WebApi\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\msfregola\OneDrive - Contrader Srl\Desktop\cs12dotnet8\ToDoList\ToDoList.WebApi\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\msfregola\OneDrive - Contrader Srl\Desktop\cs12dotnet8\ToDoList\ToDoList.WebApi\obj\Debug\net9.0\ToDoList.WebApi.sourcelink.json

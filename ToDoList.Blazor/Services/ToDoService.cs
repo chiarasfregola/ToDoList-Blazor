@@ -1,45 +1,61 @@
 using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Net.Http.Json;
 using System.Threading.Tasks;
-using Models;
+using System.Collections.Generic;
+using ToDoApi.Models;
 
 namespace Services
 {
     public class ToDoService
     {
         private readonly HttpClient _httpClient;
+        private string _token;
 
         public ToDoService(HttpClient httpClient)
         {
             _httpClient = httpClient;
         }
 
-        public async Task<List<ToDoItem>> GetAllToDoItemsAsync()
+        public void SetAuthorizationToken(string token)
         {
-            return await _httpClient.GetFromJsonAsync<List<ToDoItem>>("api/ToDo");
+            _token = token;
         }
 
-        public async Task<ToDoItem> GetToDoItemByIdAsync(int id)
+        private Task<bool> AddAuthorizationHeaderAsync()
         {
-            return await _httpClient.GetFromJsonAsync<ToDoItem>($"api/ToDo/{id}");
+            if (string.IsNullOrEmpty(_token)) return Task.FromResult(false);
+
+            _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", _token);
+            return Task.FromResult(true);
+        }
+
+        public async Task<List<ToDoItem>> GetAllToDoItemsAsync()
+        {
+            if (!await AddAuthorizationHeaderAsync()) return new List<ToDoItem>();
+
+            return await _httpClient.GetFromJsonAsync<List<ToDoItem>>("https://localhost:7152/api/ToDo/List") ?? new();
         }
 
         public async Task AddToDoItemAsync(ToDoItem toDoItem)
         {
-            var response = await _httpClient.PostAsJsonAsync("api/ToDo", toDoItem);
-            response.EnsureSuccessStatusCode();
+            if (!await AddAuthorizationHeaderAsync()) return;
+
+            await _httpClient.PostAsJsonAsync("https://localhost:7152/api/ToDo/New", toDoItem);
         }
 
         public async Task UpdateToDoItemAsync(ToDoItem toDoItem)
         {
-            var response = await _httpClient.PutAsJsonAsync($"api/ToDo/{toDoItem.Id}", toDoItem);
-            response.EnsureSuccessStatusCode();
+            if (!await AddAuthorizationHeaderAsync()) return;
+
+            await _httpClient.PutAsJsonAsync($"https://localhost:7152/api/ToDo/{toDoItem.Id}", toDoItem);
         }
 
         public async Task DeleteToDoItemAsync(int id)
         {
-            var response = await _httpClient.DeleteAsync($"api/ToDo/{id}");
-            response.EnsureSuccessStatusCode();
+            if (!await AddAuthorizationHeaderAsync()) return;
+
+            await _httpClient.DeleteAsync($"https://localhost:7152/api/ToDo/{id}");
         }
     }
 }

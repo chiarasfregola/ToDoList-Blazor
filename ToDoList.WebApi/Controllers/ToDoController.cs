@@ -1,117 +1,116 @@
-using Microsoft.AspNetCore.Mvc; //per gestire le richieste HTTP
-using Microsoft.EntityFrameworkCore; //per accesso al DB
-using Microsoft.AspNetCore.Authorization; //auteticazione e autorizzazione degli endpoint
-using ToDoApi.Models;  //per ToDoItem
-using ToDoApi.Data; //per ToDoContext
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
+using ToDoApi.Models;
+using ToDoApi.Data;
 
 namespace ToDoList.WebApi.Controllers
 {
-    [Authorize] //tutto valido per utente autenticato
-    [Route("api/[controller]")]  
-    [ApiController] 
+    [Authorize]
+    [Route("api/[controller]")]
+    [ApiController]
     public class ToDoController : ControllerBase
     {
         private readonly ToDoContext _context;
 
-        //Dependency Injection
         public ToDoController(ToDoContext context)
         {
             _context = context;
         }
 
-        // GET: recupera tutti i ToDoItem e restituisce una lista
+        // GET: api/todo/list
         [HttpGet("List")]
         public async Task<ActionResult<IEnumerable<ToDoItem>>> GetToDoItems()
         {
-            return await _context.ToDoItems.ToListAsync();
+            var userId = User.Identity?.Name;
+            if (userId == null)
+                return Unauthorized();
+
+            var toDoItems = await _context.ToDoItems
+                .Where(t => t.UserId == userId)
+                .ToListAsync();
+
+            return Ok(toDoItems);
         }
 
-        // GET: recupera l'attività a partire dall'id
-        [HttpGet("{id}")] 
+        // GET: api/todo/5
+        [HttpGet("{id}")]
         public async Task<ActionResult<ToDoItem>> GetToDoItem(int id)
         {
-            // Cerca l'attività per id
+            var userId = User.Identity?.Name;
             var toDoItem = await _context.ToDoItems.FindAsync(id);
 
-            // Se l'attività non è trovata, restituisce NotFound
-            if (toDoItem == null)
+            if (toDoItem == null || toDoItem.UserId != userId)
             {
                 return NotFound();
             }
 
-            return toDoItem;
+            return Ok(toDoItem);
         }
 
-        // POST: creazione della nuova attività
+        // POST: api/todo/new
         [HttpPost("New")]
         public async Task<ActionResult<ToDoItem>> PostToDoItem(ToDoItem toDoItem)
         {
-            _context.ToDoItems.Add(toDoItem);
+            var userId = User.Identity?.Name;
+            if (userId == null)
+                return Unauthorized();
 
-            // Salva i cambiamenti nel database
+            toDoItem.UserId = userId;
+            _context.ToDoItems.Add(toDoItem);
             await _context.SaveChangesAsync();
 
-            // Restituisci una risposta con l'ID dell'elemento appena creato
             return CreatedAtAction(nameof(GetToDoItem), new { id = toDoItem.Id }, toDoItem);
         }
 
-        // PUT: aggiorna un'attività esistente
+        // PUT: api/todo/5
         [HttpPut("{id}")]
         public async Task<IActionResult> PutToDoItem(int id, ToDoItem toDoItem)
         {
-            // Verifica che l'ID dell'elemento da aggiornare corrisponda
-            if (id != toDoItem.Id)
-            {
-                return BadRequest();
-            }
+            var userId = User.Identity?.Name;
 
-            // Segna l'elemento come modificato
+            if (id != toDoItem.Id)
+                return BadRequest();
+
+            var existing = await _context.ToDoItems.AsNoTracking().FirstOrDefaultAsync(t => t.Id == id);
+
+            if (existing == null || existing.UserId != userId)
+                return NotFound();
+
+            toDoItem.UserId = userId;
             _context.Entry(toDoItem).State = EntityState.Modified;
 
             try
             {
-                // Salva i cambiamenti
                 await _context.SaveChangesAsync();
             }
             catch (DbUpdateConcurrencyException)
             {
-                // Se l'elemento non esiste più, restituisce NotFound
                 if (!ToDoItemExists(id))
-                {
                     return NotFound();
-                }
                 else
-                {
                     throw;
-                }
             }
 
             return NoContent();
         }
 
-        // DELETE: elimina l'attività
-        [HttpDelete("{id}")] 
+        // DELETE: api/todo/5
+        [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteToDoItem(int id)
         {
-            // Trova l'attività da eliminare
+            var userId = User.Identity?.Name;
             var toDoItem = await _context.ToDoItems.FindAsync(id);
 
-            // Se l'attività non è trovata, restituisce NotFound
-            if (toDoItem == null)
-            {
+            if (toDoItem == null || toDoItem.UserId != userId)
                 return NotFound();
-            }
 
-            // Rimuove l'attività dal contesto
             _context.ToDoItems.Remove(toDoItem);
-
-            // Salva i cambiamenti nel database
             await _context.SaveChangesAsync();
 
             return NoContent();
         }
 
-        // Verifica se l'elemento esiste nel database
         private bool ToDoItemExists(int id)
         {
             return _context.ToDoItems.Any(e => e.Id == id);
