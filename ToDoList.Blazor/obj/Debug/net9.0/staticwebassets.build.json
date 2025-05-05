@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "jVGEVkvpdnzMn9I8NMu6ysp8eetvFAF9+2mbBITLWIg=",
+  "Hash": "GZL4MyE+pk44DyZuL1/3VbVg8l43Qk7mNZDx4dOHaPY=",
   "Source": "ToDoList.Blazor",
   "BasePath": "_content/ToDoList.Blazor",
   "Mode": "Default",
@@ -155,12 +155,12 @@
       "OriginalItemSpec": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor\\obj\\Debug\\net9.0\\compressed\\39iuvjlih9-fsu8h1a4ix.gz",
+      "Identity": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor\\obj\\Debug\\net9.0\\compressed\\39iuvjlih9-2fsepp2iu9.gz",
       "SourceId": "ToDoList.Blazor",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/ToDoList.Blazor",
-      "RelativePath": "ToDoList.Blazor#[.{fingerprint=fsu8h1a4ix}]?.styles.css.gz",
+      "RelativePath": "ToDoList.Blazor#[.{fingerprint=2fsepp2iu9}]?.styles.css.gz",
       "AssetKind": "All",
       "AssetMode": "CurrentProject",
       "AssetRole": "Alternative",
@@ -169,8 +169,8 @@
       "RelatedAsset": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor\\obj\\Debug\\net9.0\\scopedcss\\bundle\\ToDoList.Blazor.styles.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "zbup33c9w3",
-      "Integrity": "McvP9eTRZ7nrCyP19wQ6KI8RyK1EPfSgf+xpvRPGdi8=",
+      "Fingerprint": "y1p9enoic6",
+      "Integrity": "FnGAJz4yU3Ewon1+XjgVPE8S3PM1AT5IOYKpp+ItcD8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor\\obj\\Debug\\net9.0\\scopedcss\\bundle\\ToDoList.Blazor.styles.css"
@@ -806,12 +806,12 @@
       "OriginalItemSpec": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor\\obj\\Debug\\net9.0\\compressed\\owx2uz95e8-fsu8h1a4ix.gz",
+      "Identity": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor\\obj\\Debug\\net9.0\\compressed\\owx2uz95e8-2fsepp2iu9.gz",
       "SourceId": "ToDoList.Blazor",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/ToDoList.Blazor",
-      "RelativePath": "ToDoList.Blazor#[.{fingerprint=fsu8h1a4ix}]!.bundle.scp.css.gz",
+      "RelativePath": "ToDoList.Blazor#[.{fingerprint=2fsepp2iu9}]!.bundle.scp.css.gz",
       "AssetKind": "All",
       "AssetMode": "Reference",
       "AssetRole": "Alternative",
@@ -820,8 +820,8 @@
       "RelatedAsset": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\ToDoList.Blazor.bundle.scp.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "zbup33c9w3",
-      "Integrity": "McvP9eTRZ7nrCyP19wQ6KI8RyK1EPfSgf+xpvRPGdi8=",
+      "Fingerprint": "y1p9enoic6",
+      "Integrity": "FnGAJz4yU3Ewon1+XjgVPE8S3PM1AT5IOYKpp+ItcD8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\ToDoList.Blazor.bundle.scp.css"
@@ -1030,8 +1030,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ApplicationBundle",
-      "Fingerprint": "fsu8h1a4ix",
-      "Integrity": "Ib0V0G1xLor1igyiYNrpCHKWB7tVJaAYsdz6x9aK/kY=",
+      "Fingerprint": "2fsepp2iu9",
+      "Integrity": "ohvKVxBCjeHqUuziK2eodbb5IXOGvDhPCl/klgjhUGg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor\\obj\\Debug\\net9.0\\scopedcss\\bundle\\ToDoList.Blazor.styles.css"
@@ -1051,8 +1051,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ProjectBundle",
-      "Fingerprint": "fsu8h1a4ix",
-      "Integrity": "Ib0V0G1xLor1igyiYNrpCHKWB7tVJaAYsdz6x9aK/kY=",
+      "Fingerprint": "2fsepp2iu9",
+      "Integrity": "ohvKVxBCjeHqUuziK2eodbb5IXOGvDhPCl/klgjhUGg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\ToDoList.Blazor.bundle.scp.css"
@@ -15518,13 +15518,13 @@
       ]
     },
     {
-      "Route": "ToDoList.Blazor.bundle.scp.css",
-      "AssetFile": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor\\obj\\Debug\\net9.0\\compressed\\owx2uz95e8-fsu8h1a4ix.gz",
+      "Route": "ToDoList.Blazor.2fsepp2iu9.bundle.scp.css",
+      "AssetFile": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor\\obj\\Debug\\net9.0\\compressed\\owx2uz95e8-2fsepp2iu9.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000560538117"
+          "Quality": "0.000486854917"
         }
       ],
       "ResponseHeaders": [
@@ -15534,19 +15534,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1783"
+          "Value": "2053"
         },
         {
           "Name": "ETag",
-          "Value": "\"McvP9eTRZ7nrCyP19wQ6KI8RyK1EPfSgf+xpvRPGdi8=\""
+          "Value": "\"FnGAJz4yU3Ewon1+XjgVPE8S3PM1AT5IOYKpp+ItcD8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 29 Apr 2025 08:02:09 GMT"
+          "Value": "Fri, 02 May 2025 15:14:08 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "no-cache"
+          "Value": "max-age=31536000, immutable"
         },
         {
           "Name": "Content-Encoding",
@@ -15562,18 +15562,26 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"Ib0V0G1xLor1igyiYNrpCHKWB7tVJaAYsdz6x9aK/kY=\""
+          "Value": "W/\"ohvKVxBCjeHqUuziK2eodbb5IXOGvDhPCl/klgjhUGg=\""
         }
       ],
       "EndpointProperties": [
         {
+          "Name": "fingerprint",
+          "Value": "2fsepp2iu9"
+        },
+        {
+          "Name": "label",
+          "Value": "ToDoList.Blazor.bundle.scp.css"
+        },
+        {
           "Name": "integrity",
-          "Value": "sha256-Ib0V0G1xLor1igyiYNrpCHKWB7tVJaAYsdz6x9aK/kY="
+          "Value": "sha256-ohvKVxBCjeHqUuziK2eodbb5IXOGvDhPCl/klgjhUGg="
         }
       ]
     },
     {
-      "Route": "ToDoList.Blazor.bundle.scp.css",
+      "Route": "ToDoList.Blazor.2fsepp2iu9.bundle.scp.css",
       "AssetFile": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\ToDoList.Blazor.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -15583,7 +15591,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5977"
+          "Value": "7632"
         },
         {
           "Name": "Content-Type",
@@ -15591,121 +15599,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Ib0V0G1xLor1igyiYNrpCHKWB7tVJaAYsdz6x9aK/kY=\""
+          "Value": "\"ohvKVxBCjeHqUuziK2eodbb5IXOGvDhPCl/klgjhUGg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 29 Apr 2025 08:02:09 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-Ib0V0G1xLor1igyiYNrpCHKWB7tVJaAYsdz6x9aK/kY="
-        }
-      ]
-    },
-    {
-      "Route": "ToDoList.Blazor.bundle.scp.css.gz",
-      "AssetFile": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor\\obj\\Debug\\net9.0\\compressed\\owx2uz95e8-fsu8h1a4ix.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1783"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"McvP9eTRZ7nrCyP19wQ6KI8RyK1EPfSgf+xpvRPGdi8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 29 Apr 2025 08:02:09 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-McvP9eTRZ7nrCyP19wQ6KI8RyK1EPfSgf+xpvRPGdi8="
-        }
-      ]
-    },
-    {
-      "Route": "ToDoList.Blazor.fsu8h1a4ix.bundle.scp.css",
-      "AssetFile": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor\\obj\\Debug\\net9.0\\compressed\\owx2uz95e8-fsu8h1a4ix.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000560538117"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1783"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"McvP9eTRZ7nrCyP19wQ6KI8RyK1EPfSgf+xpvRPGdi8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 29 Apr 2025 08:02:09 GMT"
+          "Value": "Fri, 02 May 2025 15:14:08 GMT"
         },
         {
           "Name": "Cache-Control",
           "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"Ib0V0G1xLor1igyiYNrpCHKWB7tVJaAYsdz6x9aK/kY=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "fsu8h1a4ix"
+          "Value": "2fsepp2iu9"
         },
         {
           "Name": "label",
@@ -15713,13 +15621,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Ib0V0G1xLor1igyiYNrpCHKWB7tVJaAYsdz6x9aK/kY="
+          "Value": "sha256-ohvKVxBCjeHqUuziK2eodbb5IXOGvDhPCl/klgjhUGg="
         }
       ]
     },
     {
-      "Route": "ToDoList.Blazor.fsu8h1a4ix.bundle.scp.css",
-      "AssetFile": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\ToDoList.Blazor.bundle.scp.css",
+      "Route": "ToDoList.Blazor.2fsepp2iu9.bundle.scp.css.gz",
+      "AssetFile": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor\\obj\\Debug\\net9.0\\compressed\\owx2uz95e8-2fsepp2iu9.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -15728,7 +15636,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5977"
+          "Value": "2053"
         },
         {
           "Name": "Content-Type",
@@ -15736,56 +15644,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Ib0V0G1xLor1igyiYNrpCHKWB7tVJaAYsdz6x9aK/kY=\""
+          "Value": "\"FnGAJz4yU3Ewon1+XjgVPE8S3PM1AT5IOYKpp+ItcD8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 29 Apr 2025 08:02:09 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "fsu8h1a4ix"
-        },
-        {
-          "Name": "label",
-          "Value": "ToDoList.Blazor.bundle.scp.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-Ib0V0G1xLor1igyiYNrpCHKWB7tVJaAYsdz6x9aK/kY="
-        }
-      ]
-    },
-    {
-      "Route": "ToDoList.Blazor.fsu8h1a4ix.bundle.scp.css.gz",
-      "AssetFile": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor\\obj\\Debug\\net9.0\\compressed\\owx2uz95e8-fsu8h1a4ix.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1783"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"McvP9eTRZ7nrCyP19wQ6KI8RyK1EPfSgf+xpvRPGdi8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 29 Apr 2025 08:02:09 GMT"
+          "Value": "Fri, 02 May 2025 15:14:08 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15803,7 +15666,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "fsu8h1a4ix"
+          "Value": "2fsepp2iu9"
         },
         {
           "Name": "label",
@@ -15811,18 +15674,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-McvP9eTRZ7nrCyP19wQ6KI8RyK1EPfSgf+xpvRPGdi8="
+          "Value": "sha256-FnGAJz4yU3Ewon1+XjgVPE8S3PM1AT5IOYKpp+ItcD8="
         }
       ]
     },
     {
-      "Route": "ToDoList.Blazor.fsu8h1a4ix.styles.css",
-      "AssetFile": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor\\obj\\Debug\\net9.0\\compressed\\39iuvjlih9-fsu8h1a4ix.gz",
+      "Route": "ToDoList.Blazor.2fsepp2iu9.styles.css",
+      "AssetFile": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor\\obj\\Debug\\net9.0\\compressed\\39iuvjlih9-2fsepp2iu9.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000560538117"
+          "Quality": "0.000486854917"
         }
       ],
       "ResponseHeaders": [
@@ -15832,15 +15695,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1783"
+          "Value": "2053"
         },
         {
           "Name": "ETag",
-          "Value": "\"McvP9eTRZ7nrCyP19wQ6KI8RyK1EPfSgf+xpvRPGdi8=\""
+          "Value": "\"FnGAJz4yU3Ewon1+XjgVPE8S3PM1AT5IOYKpp+ItcD8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 29 Apr 2025 08:02:09 GMT"
+          "Value": "Fri, 02 May 2025 15:14:08 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15860,13 +15723,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"Ib0V0G1xLor1igyiYNrpCHKWB7tVJaAYsdz6x9aK/kY=\""
+          "Value": "W/\"ohvKVxBCjeHqUuziK2eodbb5IXOGvDhPCl/klgjhUGg=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "fsu8h1a4ix"
+          "Value": "2fsepp2iu9"
         },
         {
           "Name": "label",
@@ -15874,12 +15737,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Ib0V0G1xLor1igyiYNrpCHKWB7tVJaAYsdz6x9aK/kY="
+          "Value": "sha256-ohvKVxBCjeHqUuziK2eodbb5IXOGvDhPCl/klgjhUGg="
         }
       ]
     },
     {
-      "Route": "ToDoList.Blazor.fsu8h1a4ix.styles.css",
+      "Route": "ToDoList.Blazor.2fsepp2iu9.styles.css",
       "AssetFile": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor\\obj\\Debug\\net9.0\\scopedcss\\bundle\\ToDoList.Blazor.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -15889,7 +15752,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5977"
+          "Value": "7632"
         },
         {
           "Name": "Content-Type",
@@ -15897,11 +15760,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Ib0V0G1xLor1igyiYNrpCHKWB7tVJaAYsdz6x9aK/kY=\""
+          "Value": "\"ohvKVxBCjeHqUuziK2eodbb5IXOGvDhPCl/klgjhUGg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 29 Apr 2025 08:02:09 GMT"
+          "Value": "Fri, 02 May 2025 15:14:08 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15911,7 +15774,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "fsu8h1a4ix"
+          "Value": "2fsepp2iu9"
         },
         {
           "Name": "label",
@@ -15919,13 +15782,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Ib0V0G1xLor1igyiYNrpCHKWB7tVJaAYsdz6x9aK/kY="
+          "Value": "sha256-ohvKVxBCjeHqUuziK2eodbb5IXOGvDhPCl/klgjhUGg="
         }
       ]
     },
     {
-      "Route": "ToDoList.Blazor.fsu8h1a4ix.styles.css.gz",
-      "AssetFile": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor\\obj\\Debug\\net9.0\\compressed\\39iuvjlih9-fsu8h1a4ix.gz",
+      "Route": "ToDoList.Blazor.2fsepp2iu9.styles.css.gz",
+      "AssetFile": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor\\obj\\Debug\\net9.0\\compressed\\39iuvjlih9-2fsepp2iu9.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -15934,7 +15797,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1783"
+          "Value": "2053"
         },
         {
           "Name": "Content-Type",
@@ -15942,11 +15805,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"McvP9eTRZ7nrCyP19wQ6KI8RyK1EPfSgf+xpvRPGdi8=\""
+          "Value": "\"FnGAJz4yU3Ewon1+XjgVPE8S3PM1AT5IOYKpp+ItcD8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 29 Apr 2025 08:02:09 GMT"
+          "Value": "Fri, 02 May 2025 15:14:08 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -15964,7 +15827,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "fsu8h1a4ix"
+          "Value": "2fsepp2iu9"
         },
         {
           "Name": "label",
@@ -15972,18 +15835,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-McvP9eTRZ7nrCyP19wQ6KI8RyK1EPfSgf+xpvRPGdi8="
+          "Value": "sha256-FnGAJz4yU3Ewon1+XjgVPE8S3PM1AT5IOYKpp+ItcD8="
         }
       ]
     },
     {
-      "Route": "ToDoList.Blazor.styles.css",
-      "AssetFile": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor\\obj\\Debug\\net9.0\\compressed\\39iuvjlih9-fsu8h1a4ix.gz",
+      "Route": "ToDoList.Blazor.bundle.scp.css",
+      "AssetFile": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor\\obj\\Debug\\net9.0\\compressed\\owx2uz95e8-2fsepp2iu9.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000560538117"
+          "Quality": "0.000486854917"
         }
       ],
       "ResponseHeaders": [
@@ -15993,15 +15856,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1783"
+          "Value": "2053"
         },
         {
           "Name": "ETag",
-          "Value": "\"McvP9eTRZ7nrCyP19wQ6KI8RyK1EPfSgf+xpvRPGdi8=\""
+          "Value": "\"FnGAJz4yU3Ewon1+XjgVPE8S3PM1AT5IOYKpp+ItcD8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 29 Apr 2025 08:02:09 GMT"
+          "Value": "Fri, 02 May 2025 15:14:08 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -16021,13 +15884,150 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"Ib0V0G1xLor1igyiYNrpCHKWB7tVJaAYsdz6x9aK/kY=\""
+          "Value": "W/\"ohvKVxBCjeHqUuziK2eodbb5IXOGvDhPCl/klgjhUGg=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Ib0V0G1xLor1igyiYNrpCHKWB7tVJaAYsdz6x9aK/kY="
+          "Value": "sha256-ohvKVxBCjeHqUuziK2eodbb5IXOGvDhPCl/klgjhUGg="
+        }
+      ]
+    },
+    {
+      "Route": "ToDoList.Blazor.bundle.scp.css",
+      "AssetFile": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\ToDoList.Blazor.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7632"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ohvKVxBCjeHqUuziK2eodbb5IXOGvDhPCl/klgjhUGg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 15:14:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ohvKVxBCjeHqUuziK2eodbb5IXOGvDhPCl/klgjhUGg="
+        }
+      ]
+    },
+    {
+      "Route": "ToDoList.Blazor.bundle.scp.css.gz",
+      "AssetFile": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor\\obj\\Debug\\net9.0\\compressed\\owx2uz95e8-2fsepp2iu9.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2053"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FnGAJz4yU3Ewon1+XjgVPE8S3PM1AT5IOYKpp+ItcD8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 15:14:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-FnGAJz4yU3Ewon1+XjgVPE8S3PM1AT5IOYKpp+ItcD8="
+        }
+      ]
+    },
+    {
+      "Route": "ToDoList.Blazor.styles.css",
+      "AssetFile": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor\\obj\\Debug\\net9.0\\compressed\\39iuvjlih9-2fsepp2iu9.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000486854917"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2053"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FnGAJz4yU3Ewon1+XjgVPE8S3PM1AT5IOYKpp+ItcD8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 15:14:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"ohvKVxBCjeHqUuziK2eodbb5IXOGvDhPCl/klgjhUGg=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ohvKVxBCjeHqUuziK2eodbb5IXOGvDhPCl/klgjhUGg="
         }
       ]
     },
@@ -16042,7 +16042,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5977"
+          "Value": "7632"
         },
         {
           "Name": "Content-Type",
@@ -16050,11 +16050,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Ib0V0G1xLor1igyiYNrpCHKWB7tVJaAYsdz6x9aK/kY=\""
+          "Value": "\"ohvKVxBCjeHqUuziK2eodbb5IXOGvDhPCl/klgjhUGg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 29 Apr 2025 08:02:09 GMT"
+          "Value": "Fri, 02 May 2025 15:14:08 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -16064,13 +16064,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Ib0V0G1xLor1igyiYNrpCHKWB7tVJaAYsdz6x9aK/kY="
+          "Value": "sha256-ohvKVxBCjeHqUuziK2eodbb5IXOGvDhPCl/klgjhUGg="
         }
       ]
     },
     {
       "Route": "ToDoList.Blazor.styles.css.gz",
-      "AssetFile": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor\\obj\\Debug\\net9.0\\compressed\\39iuvjlih9-fsu8h1a4ix.gz",
+      "AssetFile": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor\\obj\\Debug\\net9.0\\compressed\\39iuvjlih9-2fsepp2iu9.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -16079,7 +16079,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1783"
+          "Value": "2053"
         },
         {
           "Name": "Content-Type",
@@ -16087,11 +16087,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"McvP9eTRZ7nrCyP19wQ6KI8RyK1EPfSgf+xpvRPGdi8=\""
+          "Value": "\"FnGAJz4yU3Ewon1+XjgVPE8S3PM1AT5IOYKpp+ItcD8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 29 Apr 2025 08:02:09 GMT"
+          "Value": "Fri, 02 May 2025 15:14:08 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -16109,7 +16109,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-McvP9eTRZ7nrCyP19wQ6KI8RyK1EPfSgf+xpvRPGdi8="
+          "Value": "sha256-FnGAJz4yU3Ewon1+XjgVPE8S3PM1AT5IOYKpp+ItcD8="
         }
       ]
     }

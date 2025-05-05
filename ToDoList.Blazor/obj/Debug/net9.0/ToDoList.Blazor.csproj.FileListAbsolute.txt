@@ -62,8 +62,6 @@ C:\Users\msfregola\OneDrive - Contrader Srl\Desktop\cs12dotnet8\ToDoList\ToDoLis
 C:\Users\msfregola\OneDrive - Contrader Srl\Desktop\cs12dotnet8\ToDoList\ToDoList.Blazor\obj\Debug\net9.0\compressed\xarkoi0fie-h1s4sie4z3.gz
 C:\Users\msfregola\OneDrive - Contrader Srl\Desktop\cs12dotnet8\ToDoList\ToDoList.Blazor\obj\Debug\net9.0\compressed\33p3rdixrv-63fj8s7r0e.gz
 C:\Users\msfregola\OneDrive - Contrader Srl\Desktop\cs12dotnet8\ToDoList\ToDoList.Blazor\obj\Debug\net9.0\compressed\23900p1wli-0j3bgjxly4.gz
-C:\Users\msfregola\OneDrive - Contrader Srl\Desktop\cs12dotnet8\ToDoList\ToDoList.Blazor\obj\Debug\net9.0\compressed\39iuvjlih9-fsu8h1a4ix.gz
-C:\Users\msfregola\OneDrive - Contrader Srl\Desktop\cs12dotnet8\ToDoList\ToDoList.Blazor\obj\Debug\net9.0\compressed\owx2uz95e8-fsu8h1a4ix.gz
 C:\Users\msfregola\OneDrive - Contrader Srl\Desktop\cs12dotnet8\ToDoList\ToDoList.Blazor\obj\Debug\net9.0\staticwebassets.build.json
 C:\Users\msfregola\OneDrive - Contrader Srl\Desktop\cs12dotnet8\ToDoList\ToDoList.Blazor\obj\Debug\net9.0\staticwebassets.development.json
 C:\Users\msfregola\OneDrive - Contrader Srl\Desktop\cs12dotnet8\ToDoList\ToDoList.Blazor\obj\Debug\net9.0\staticwebassets.build.endpoints.json
@@ -145,3 +143,6 @@ C:\Users\msfregola\OneDrive - Contrader Srl\Desktop\cs12dotnet8\ToDoList\ToDoLis
 C:\Users\msfregola\OneDrive - Contrader Srl\Desktop\cs12dotnet8\ToDoList\ToDoList.Blazor\bin\Debug\net9.0\runtimes\win-x86\native\e_sqlite3.dll
 C:\Users\msfregola\OneDrive - Contrader Srl\Desktop\cs12dotnet8\ToDoList\ToDoList.Blazor\bin\Debug\net9.0\ToDoList.WebApi.dll
 C:\Users\msfregola\OneDrive - Contrader Srl\Desktop\cs12dotnet8\ToDoList\ToDoList.Blazor\bin\Debug\net9.0\ToDoList.WebApi.pdb
+C:\Users\msfregola\OneDrive - Contrader Srl\Desktop\cs12dotnet8\ToDoList\ToDoList.Blazor\obj\Debug\net9.0\scopedcss\Components\Pages\Home.razor.rz.scp.css
+C:\Users\msfregola\OneDrive - Contrader Srl\Desktop\cs12dotnet8\ToDoList\ToDoList.Blazor\obj\Debug\net9.0\compressed\39iuvjlih9-2fsepp2iu9.gz
+C:\Users\msfregola\OneDrive - Contrader Srl\Desktop\cs12dotnet8\ToDoList\ToDoList.Blazor\obj\Debug\net9.0\compressed\owx2uz95e8-2fsepp2iu9.gz

@@ -1,5 +1,5 @@
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore; //importa le classi per usare Identity EF Core
+using Microsoft.EntityFrameworkCore; //per interagire con il DB
 using ToDoApi.Models;
 
 

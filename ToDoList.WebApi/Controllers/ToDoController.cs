@@ -13,12 +13,13 @@ namespace ToDoList.WebApi.Controllers
     {
         private readonly ToDoContext _context;
 
+        //inietta il Db
         public ToDoController(ToDoContext context)
         {
             _context = context;
         }
 
-        // GET: api/todo/list
+        //api/todo/list: restituisce la lista associata all'utente
         [HttpGet("List")]
         public async Task<ActionResult<IEnumerable<ToDoItem>>> GetToDoItems()
         {
@@ -33,7 +34,7 @@ namespace ToDoList.WebApi.Controllers
             return Ok(toDoItems);
         }
 
-        // GET: api/todo/5
+        //api/todo/{id}: 
         [HttpGet("{id}")]
         public async Task<ActionResult<ToDoItem>> GetToDoItem(int id)
         {
@@ -111,6 +112,7 @@ namespace ToDoList.WebApi.Controllers
             return NoContent();
         }
 
+        //controlla se un elemento esiste nel DB (cerca per id)
         private bool ToDoItemExists(int id)
         {
             return _context.ToDoItems.Any(e => e.Id == id);

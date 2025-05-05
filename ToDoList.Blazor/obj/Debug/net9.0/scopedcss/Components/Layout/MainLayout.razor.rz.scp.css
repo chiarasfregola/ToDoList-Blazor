@@ -1,15 +1,21 @@
 .page[b-o9ef8yc8zb] {
     position: relative;
     display: flex;
-    flex-direction: column;
-}
-
-main[b-o9ef8yc8zb] {
-    flex: 1;
+    flex-direction: row; /* Impostiamo il layout in una riga per affiancare sidebar e contenuto */
 }
 
 .sidebar[b-o9ef8yc8zb] {
+    width: 250px; /* Larghezza fissa della sidebar */
     background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+    height: 100vh; /* La sidebar occupa tutta l'altezza della pagina */
+    position: sticky;
+    top: 0;
+    padding-top: 1rem; /* Padding per evitare che gli elementi tocchino il bordo superiore */
+}
+
+main[b-o9ef8yc8zb] {
+    flex: 1; /* Il contenuto principale occupa lo spazio rimanente */
+    padding: 2rem; /* Aggiungiamo del padding per rendere il contenuto più spazioso */
 }
 
 .top-row[b-o9ef8yc8zb] {
@@ -19,80 +25,71 @@ main[b-o9ef8yc8zb] {
     height: 3.5rem;
     display: flex;
     align-items: center;
+    padding: 0 2rem;
 }
 
-    .top-row[b-o9ef8yc8zb]  a, .top-row[b-o9ef8yc8zb]  .btn-link {
-        white-space: nowrap;
-        margin-left: 1.5rem;
-        text-decoration: none;
-    }
+.auth-buttons[b-o9ef8yc8zb] {
+    display: flex;
+    gap: 1rem;
+}
 
-    .top-row[b-o9ef8yc8zb]  a:hover, .top-row[b-o9ef8yc8zb]  .btn-link:hover {
-        text-decoration: underline;
-    }
+.auth-button[b-o9ef8yc8zb] {
+    font-size: 1rem;
+    padding: 0.75rem 2rem;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, font-weight 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    display: inline-block;
+    font-weight: normal;
+    background-color: #cfaaff;
+    color: white;
+    border: none; /* Rimuove il contorno */
+}
 
-    .top-row[b-o9ef8yc8zb]  a:first-child {
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
+/* Pulsante Login */
+.auth-button.login[b-o9ef8yc8zb] {
+    background-color: #e2d4f7;
+    color: #333;
+}
+
+/* Effetto hover per i pulsanti */
+.auth-button:hover[b-o9ef8yc8zb] {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+}
+
+.top-row[b-o9ef8yc8zb]  a,
+.top-row[b-o9ef8yc8zb]  .btn-link {
+    white-space: nowrap;
+    margin-left: 1.5rem;
+    text-decoration: none;
+}
+
+.top-row[b-o9ef8yc8zb]  a:hover,
+.top-row[b-o9ef8yc8zb]  .btn-link:hover {
+    text-decoration: underline;
+}
 
 @media (max-width: 640.98px) {
+    .page[b-o9ef8yc8zb] {
+        flex-direction: column; /* Su schermi piccoli, mettiamo la sidebar sopra il contenuto */
+    }
+
+    .sidebar[b-o9ef8yc8zb] {
+        width: 100%; /* La sidebar diventa full-width su schermi piccoli */
+        height: auto; /* La sidebar non occupa tutta l'altezza su schermi piccoli */
+    }
+
     .top-row[b-o9ef8yc8zb] {
         justify-content: space-between;
     }
 
-    .top-row[b-o9ef8yc8zb]  a, .top-row[b-o9ef8yc8zb]  .btn-link {
+    .top-row[b-o9ef8yc8zb]  a,
+    .top-row[b-o9ef8yc8zb]  .btn-link {
         margin-left: 0;
     }
 }
-
-@media (min-width: 641px) {
-    .page[b-o9ef8yc8zb] {
-        flex-direction: row;
-    }
-
-    .sidebar[b-o9ef8yc8zb] {
-        width: 250px;
-        height: 100vh;
-        position: sticky;
-        top: 0;
-    }
-
-    .top-row[b-o9ef8yc8zb] {
-        position: sticky;
-        top: 0;
-        z-index: 1;
-    }
-
-    .top-row.auth[b-o9ef8yc8zb]  a:first-child {
-        flex: 1;
-        text-align: right;
-        width: 0;
-    }
-
-    .top-row[b-o9ef8yc8zb], article[b-o9ef8yc8zb] {
-        padding-left: 2rem !important;
-        padding-right: 1.5rem !important;
-    }
-}
-
-#blazor-error-ui[b-o9ef8yc8zb] {
-    color-scheme: light only;
-    background: lightyellow;
-    bottom: 0;
-    box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.2);
-    box-sizing: border-box;
-    display: none;
-    left: 0;
-    padding: 0.6rem 1.25rem 0.7rem 1.25rem;
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
-}
-
-    #blazor-error-ui .dismiss[b-o9ef8yc8zb] {
-        cursor: pointer;
-        position: absolute;
-        right: 0.75rem;
-        top: 0.5rem;
-    }

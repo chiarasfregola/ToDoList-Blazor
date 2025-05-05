@@ -10,16 +10,12 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 
-// Configura HttpClient per comunicare con l'API
-builder.Services.AddHttpClient<AuthService>(client =>
-{
-    client.BaseAddress = new Uri("https://localhost:7152/");
-});
+// Registra HttpClient globale
+builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri("https://localhost:7152/") });
 
-builder.Services.AddHttpClient<ToDoService>(client =>
-{
-    client.BaseAddress = new Uri("https://localhost:7152/");
-});
+// Registra AuthService e ToDoService come servizi scoped
+builder.Services.AddScoped<AuthService>();
+builder.Services.AddScoped<ToDoService>();
 
 var app = builder.Build();
 

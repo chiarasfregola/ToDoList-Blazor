@@ -1,4 +1,5 @@
 using Microsoft.JSInterop;
+using Microsoft.AspNetCore.Components;
 using System.Net.Http;
 using System.Net.Http.Json;
 using System.Threading.Tasks;
@@ -10,15 +11,17 @@ namespace Services
     {
         private readonly HttpClient _httpClient;
         private readonly IJSRuntime _jsRuntime;
+        private readonly NavigationManager _navigationManager;
         private string _currentToken;
         private bool _jsRuntimeReady = false;
 
         public string CurrentToken => _currentToken;
 
-        public AuthService(HttpClient httpClient, IJSRuntime jsRuntime)
+        public AuthService(HttpClient httpClient, IJSRuntime jsRuntime, NavigationManager navigationManager)
         {
             _httpClient = httpClient;
             _jsRuntime = jsRuntime;
+            _navigationManager = navigationManager;
         }
 
         public void EnableJsInterop()
@@ -85,6 +88,12 @@ namespace Services
             await _jsRuntime.InvokeVoidAsync("localStorage.removeItem", "authToken");
         }
 
+    public async Task LogoutAsync()
+    {
+        _currentToken = null;
+        await _jsRuntime.InvokeVoidAsync("localStorage.removeItem", "authToken");
+    }
+
         public class LoginResponse
         {
             public string Token { get; set; }
@@ -104,4 +113,3 @@ namespace Services
         }
     }
 }
-

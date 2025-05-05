@@ -10,6 +10,7 @@ namespace ToDoList.WebApi.Controllers
     [ApiController]
     public class RegisterController : ControllerBase
     {
+        //Dependency Injection di UserManager
         private readonly UserManager<ApplicationUser> _userManager;
 
         public RegisterController(UserManager<ApplicationUser> userManager)
@@ -17,10 +18,13 @@ namespace ToDoList.WebApi.Controllers
             _userManager = userManager;
         }
 
+        //metodo di registrazione
         [HttpPost]
         public async Task<IActionResult> Register([FromBody] RegisterModel model)
         {
+            //creo un nuovo oggetto usando l'email 
             var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
+            //con CreateAsync registro l'utente nel Db
             var result = await _userManager.CreateAsync(user, model.Password);
 
             if (result.Succeeded)

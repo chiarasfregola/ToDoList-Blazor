@@ -5,21 +5,21 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using ToDoApi.Data;
 using ToDoApi.Models;
-using ToDoApi.Repositories;
 using Swashbuckle.AspNetCore.SwaggerUI;
 
+//builder: configurazione dei servizi e configurazione dell'applicazione
 var builder = WebApplication.CreateBuilder(args);
 
-// 1. Configura il database
+//configurazione Db
 builder.Services.AddDbContext<ToDoContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// 2. Configura Identity
+//condigurazione dell'identity
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
     .AddEntityFrameworkStores<ToDoContext>()
     .AddDefaultTokenProviders();
 
-// 3. Configura autenticazione JWT
+//token JWT
 builder.Services.AddAuthentication(options =>
 {
     options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -41,21 +41,21 @@ builder.Services.AddAuthentication(options =>
     };
 });
 
-// 4. Aggiungi i controller
+//controller
 builder.Services.AddControllers();
 
-// 5. CORS per permettere a Blazor di accedere all'API
+//accesso Blazor-API
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowBlazorClient", policy =>
     {
-        policy.WithOrigins("https://localhost:7221") // URL dell'app Blazor
+        policy.WithOrigins("https://localhost:7221") // URL Blazor
               .AllowAnyMethod()
               .AllowAnyHeader();
     });
 });
 
-// 6. Swagger
+//swagger
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(options =>
 {
@@ -90,8 +90,6 @@ builder.Services.AddSwaggerGen(options =>
     });
 });
 
-// 7. Registrazione del repository
-builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
 
 var app = builder.Build();
 
@@ -109,7 +107,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.UseCors("AllowBlazorClient"); // Applica la policy CORS
+app.UseCors("AllowBlazorClient");
 
 app.UseAuthentication(); // Aggiunge l'autenticazione
 app.UseAuthorization();  // Aggiunge l'autorizzazione
