@@ -28,18 +28,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/msfregola/OneDrive - Contrader Srl/Desktop/cs12dotnet8/ToDoList/ToDoList.Blazor/Components/Pages/Login.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xMb2dpbi5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/msfregola/OneDrive - Contrader Srl/Desktop/cs12dotnet8/ToDoList/ToDoList.Blazor/Components/Pages/Register.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSZWdpc3Rlci5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/msfregola/OneDrive - Contrader Srl/Desktop/cs12dotnet8/ToDoList/ToDoList.Blazor/Components/Pages/ToDoList.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xUb0RvTGlzdC5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/msfregola/OneDrive - Contrader Srl/Desktop/cs12dotnet8/ToDoList/ToDoList.Blazor/Components/Routes.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSb3V0ZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
@@ -59,3 +47,15 @@ build_metadata.AdditionalFiles.CssScope = b-k6i8qev0ot
 [C:/Users/msfregola/OneDrive - Contrader Srl/Desktop/cs12dotnet8/ToDoList/ToDoList.Blazor/Components/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-d6um5pxi2q
+
+[C:/Users/msfregola/OneDrive - Contrader Srl/Desktop/cs12dotnet8/ToDoList/ToDoList.Blazor/Components/Pages/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xMb2dpbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-93uysbo90f
+
+[C:/Users/msfregola/OneDrive - Contrader Srl/Desktop/cs12dotnet8/ToDoList/ToDoList.Blazor/Components/Pages/Register.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSZWdpc3Rlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-5tx0q0dz0v
+
+[C:/Users/msfregola/OneDrive - Contrader Srl/Desktop/cs12dotnet8/ToDoList/ToDoList.Blazor/Components/Pages/ToDoList.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xUb0RvTGlzdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-h0kvv87ci0

@@ -552,17 +552,17 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"notf2xhcfb"},{"Name":"integrity","Value":"sha256-\u002BUW802wgVfnjaSbdwyHLlU7AVplb0WToOlvN1CnzIac="},{"Name":"label","Value":"_content/ToDoList.Blazor/lib/bootstrap/dist/js/bootstrap.js"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"145401"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022\u002BUW802wgVfnjaSbdwyHLlU7AVplb0WToOlvN1CnzIac=\u0022"},{"Name":"Last-Modified","Value":"Mon, 28 Apr 2025 14:37:50 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/ToDoList.Blazor/ToDoList.Blazor.2fsepp2iu9.bundle.scp.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ToDoList.Blazor.2fsepp2iu9.bundle.scp.css'))</AssetFile>
+    <StaticWebAssetEndpoint Include="_content/ToDoList.Blazor/ToDoList.Blazor.7whzsutxn5.bundle.scp.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ToDoList.Blazor.7whzsutxn5.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"2fsepp2iu9"},{"Name":"integrity","Value":"sha256-ohvKVxBCjeHqUuziK2eodbb5IXOGvDhPCl/klgjhUGg="},{"Name":"label","Value":"_content/ToDoList.Blazor/ToDoList.Blazor.bundle.scp.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"7632"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022ohvKVxBCjeHqUuziK2eodbb5IXOGvDhPCl/klgjhUGg=\u0022"},{"Name":"Last-Modified","Value":"Fri, 02 May 2025 15:14:08 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"7whzsutxn5"},{"Name":"integrity","Value":"sha256-Vyk8VX5R3JEOdb9hJMu\u002BKGM1\u002B0yFI6nuSb5s6m/l3yQ="},{"Name":"label","Value":"_content/ToDoList.Blazor/ToDoList.Blazor.bundle.scp.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"12964"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Vyk8VX5R3JEOdb9hJMu\u002BKGM1\u002B0yFI6nuSb5s6m/l3yQ=\u0022"},{"Name":"Last-Modified","Value":"Mon, 05 May 2025 09:54:05 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/ToDoList.Blazor/ToDoList.Blazor.bundle.scp.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ToDoList.Blazor.2fsepp2iu9.bundle.scp.css'))</AssetFile>
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ToDoList.Blazor.7whzsutxn5.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-ohvKVxBCjeHqUuziK2eodbb5IXOGvDhPCl/klgjhUGg="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"7632"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022ohvKVxBCjeHqUuziK2eodbb5IXOGvDhPCl/klgjhUGg=\u0022"},{"Name":"Last-Modified","Value":"Fri, 02 May 2025 15:14:08 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Vyk8VX5R3JEOdb9hJMu\u002BKGM1\u002B0yFI6nuSb5s6m/l3yQ="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"12964"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Vyk8VX5R3JEOdb9hJMu\u002BKGM1\u002B0yFI6nuSb5s6m/l3yQ=\u0022"},{"Name":"Last-Modified","Value":"Mon, 05 May 2025 09:54:05 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
   </ItemGroup>
 </Project>

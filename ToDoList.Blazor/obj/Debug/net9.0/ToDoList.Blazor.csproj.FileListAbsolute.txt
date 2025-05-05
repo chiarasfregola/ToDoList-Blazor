@@ -144,5 +144,8 @@ C:\Users\msfregola\OneDrive - Contrader Srl\Desktop\cs12dotnet8\ToDoList\ToDoLis
 C:\Users\msfregola\OneDrive - Contrader Srl\Desktop\cs12dotnet8\ToDoList\ToDoList.Blazor\bin\Debug\net9.0\ToDoList.WebApi.dll
 C:\Users\msfregola\OneDrive - Contrader Srl\Desktop\cs12dotnet8\ToDoList\ToDoList.Blazor\bin\Debug\net9.0\ToDoList.WebApi.pdb
 C:\Users\msfregola\OneDrive - Contrader Srl\Desktop\cs12dotnet8\ToDoList\ToDoList.Blazor\obj\Debug\net9.0\scopedcss\Components\Pages\Home.razor.rz.scp.css
-C:\Users\msfregola\OneDrive - Contrader Srl\Desktop\cs12dotnet8\ToDoList\ToDoList.Blazor\obj\Debug\net9.0\compressed\39iuvjlih9-2fsepp2iu9.gz
-C:\Users\msfregola\OneDrive - Contrader Srl\Desktop\cs12dotnet8\ToDoList\ToDoList.Blazor\obj\Debug\net9.0\compressed\owx2uz95e8-2fsepp2iu9.gz
+C:\Users\msfregola\OneDrive - Contrader Srl\Desktop\cs12dotnet8\ToDoList\ToDoList.Blazor\obj\Debug\net9.0\scopedcss\Components\Pages\ToDoList.razor.rz.scp.css
+C:\Users\msfregola\OneDrive - Contrader Srl\Desktop\cs12dotnet8\ToDoList\ToDoList.Blazor\obj\Debug\net9.0\scopedcss\Components\Pages\Login.razor.rz.scp.css
+C:\Users\msfregola\OneDrive - Contrader Srl\Desktop\cs12dotnet8\ToDoList\ToDoList.Blazor\obj\Debug\net9.0\scopedcss\Components\Pages\Register.razor.rz.scp.css
+C:\Users\msfregola\OneDrive - Contrader Srl\Desktop\cs12dotnet8\ToDoList\ToDoList.Blazor\obj\Debug\net9.0\compressed\39iuvjlih9-7whzsutxn5.gz
+C:\Users\msfregola\OneDrive - Contrader Srl\Desktop\cs12dotnet8\ToDoList\ToDoList.Blazor\obj\Debug\net9.0\compressed\owx2uz95e8-7whzsutxn5.gz

@@ -1,4 +1,7 @@
 ﻿@inherits LayoutComponentBase
+@inject AuthService AuthService
+@inject NavigationManager NavigationManager
+@inject IJSRuntime JS
 
 <div class="page">
     <div class="sidebar">
@@ -7,14 +10,17 @@
 
     <main>
         <div class="top-row px-4">
-            <div class="auth-buttons">
-                <NavLink class="nav-link auth-button register" href="/register">
-                    <span class="bi bi-person-plus"></span> Registrati
-                </NavLink>
-                <NavLink class="nav-link auth-button login" href="/login">
-                    <span class="bi bi-person-plus"></span> Login
-                </NavLink>
-            </div>
+                <div class="auth-buttons">
+                    @if (!isAuthenticated)
+                    {
+                        <NavLink class="nav-link auth-button register" href="/register">
+                        <span class="bi bi-person-plus"></span> Registrati
+                        </NavLink>
+                        <NavLink class="nav-link auth-button login" href="/login">
+                            <span class="bi bi-person-plus"></span> Login
+                        </NavLink>
+                    }
+                </div>
         </div>
 
         <article class="content px-4">
@@ -28,3 +34,44 @@
     <a href="." class="reload">Reload</a>
     <span class="dismiss">🗙</span>
 </div>
+
+@code {
+    //indica se l'utente è autenticato
+    private bool isAuthenticated = false;
+    //evita di chiamare JS Interop
+    private bool _jsInteropReady = false;
+    
+    protected override void OnInitialized()
+    {
+        AuthService.OnAuthStateChanged += AuthStateChanged;
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            // Abilita JS Interop e carica il token
+            AuthService.EnableJsInterop();
+            var token = await AuthService.GetTokenAsync();
+
+            isAuthenticated = !string.IsNullOrEmpty(token);
+            _jsInteropReady = true;
+
+            
+            StateHasChanged(); // forza il refresh dopo aver ottenuto il token
+        }
+    }
+
+    //metodo chiamato ogni volta che cambia lo stato di autenticazione
+    private void AuthStateChanged()
+    {
+        isAuthenticated = AuthService.IsLoggedIn;
+        InvokeAsync(StateHasChanged);
+    }
+
+    public void Dispose()
+    {
+        AuthService.OnAuthStateChanged -= AuthStateChanged;
+    }
+}
+

@@ -3,20 +3,25 @@ using Microsoft.AspNetCore.Components;
 using System.Net.Http;
 using System.Net.Http.Json;
 using System.Threading.Tasks;
-using ToDoList.WebApi.Controllers;
 
 namespace Services
 {
     public class AuthService
     {
-        private readonly HttpClient _httpClient;
-        private readonly IJSRuntime _jsRuntime;
-        private readonly NavigationManager _navigationManager;
-        private string _currentToken;
+        private readonly HttpClient _httpClient; //x chiamate HHTP alla WebApi
+        private readonly IJSRuntime _jsRuntime; //interagisce con il localStorage
+        private readonly NavigationManager _navigationManager; //nagiva tra pagine Blazor
+        private string _currentToken = string.Empty; //token JWT
         private bool _jsRuntimeReady = false;
 
-        public string CurrentToken => _currentToken;
+        //evento lanciato ogni volta che cambio lo stato di autenticazione
+        public event Action? OnAuthStateChanged;
 
+        //restituisco il token e lo stato login
+        public string CurrentToken => _currentToken;
+        public bool IsLoggedIn => !string.IsNullOrWhiteSpace(_currentToken);
+
+        //Depedency injection
         public AuthService(HttpClient httpClient, IJSRuntime jsRuntime, NavigationManager navigationManager)
         {
             _httpClient = httpClient;
@@ -24,11 +29,10 @@ namespace Services
             _navigationManager = navigationManager;
         }
 
-        public void EnableJsInterop()
-        {
-            _jsRuntimeReady = true;
-        }
+        public void EnableJsInterop() => _jsRuntimeReady = true;
 
+
+        //registrazione dell'utente
         public async Task<Result> RegisterAsync(string email, string password)
         {
             var registerModel = new RegisterModel { Email = email, Password = password };
@@ -41,6 +45,8 @@ namespace Services
             return new Result { IsSuccess = false, ErrorMessage = errorMessage };
         }
 
+
+        //login dell'utente
         public async Task<Result> LoginAsync(string email, string password)
         {
             var loginModel = new LoginModel { Email = email, Password = password };
@@ -49,67 +55,81 @@ namespace Services
             if (response.IsSuccessStatusCode)
             {
                 var loginResponse = await response.Content.ReadFromJsonAsync<LoginResponse>();
-                _currentToken = loginResponse.Token;
+                var token = loginResponse?.Token ?? string.Empty;
 
-                if (_jsRuntimeReady)
-                    await _jsRuntime.InvokeVoidAsync("localStorage.setItem", "authToken", loginResponse.Token);
-
-                return new Result { IsSuccess = true, Token = loginResponse.Token };
+                await SetTokenInternalAsync(token);
+                return new Result { IsSuccess = true, Token = token };
             }
 
-            var errorMessage = await response.Content.ReadAsStringAsync();
-            return new Result { IsSuccess = false, ErrorMessage = errorMessage };
+            var error = await response.Content.ReadAsStringAsync();
+            return new Result { IsSuccess = false, ErrorMessage = error };
         }
 
+        //salvataggio del token
         public async Task SaveTokenAsync(string token)
         {
             if (!_jsRuntimeReady)
-                throw new InvalidOperationException("JavaScript interop non è disponibile prima del completamento del rendering.");
+                throw new InvalidOperationException("JavaScript interop non è disponibile prima del rendering.");
 
-            await _jsRuntime.InvokeVoidAsync("localStorage.setItem", "authToken", token);
+            await SetTokenInternalAsync(token);
+        }
+        private async Task SetTokenInternalAsync(string token)
+        {
+            _currentToken = token; //aggiorno 
+            if (_jsRuntimeReady)
+                await _jsRuntime.InvokeVoidAsync("localStorage.setItem", "authToken", token); //salvo nel localStorage
+            //lancio OnAuthStateChanged che chiamo in NavMenu e MainLayout
+            OnAuthStateChanged?.Invoke();
         }
 
+        //recuper il token dal localStorage
         public async Task<string> GetTokenAsync()
         {
             if (!_jsRuntimeReady)
-            {
-                Console.WriteLine("⚠️ JS Interop non è pronto.");
                 return string.Empty;
+
+            var token = await _jsRuntime.InvokeAsync<string>("localStorage.getItem", "authToken") ?? string.Empty;
+
+            if (_currentToken != token) //se diverso aggiorno e lancio OnAuthStateChanged
+            {
+                _currentToken = token;
+                OnAuthStateChanged?.Invoke();
             }
 
-            return await _jsRuntime.InvokeAsync<string>("localStorage.getItem", "authToken");
+            return _currentToken;
         }
 
-        public async Task RemoveTokenAsync()
+        public async Task LogoutAsync()
         {
-            if (!_jsRuntimeReady)
-                throw new InvalidOperationException("JavaScript interop non è disponibile prima del completamento del rendering.");
-
+            _currentToken = string.Empty;
             await _jsRuntime.InvokeVoidAsync("localStorage.removeItem", "authToken");
+            OnAuthStateChanged?.Invoke();
         }
 
-    public async Task LogoutAsync()
-    {
-        _currentToken = null;
-        await _jsRuntime.InvokeVoidAsync("localStorage.removeItem", "authToken");
-    }
-
+        // Modelli interni
         public class LoginResponse
         {
-            public string Token { get; set; }
+            public string Token { get; set; } = string.Empty;
         }
 
         public class Result
         {
             public bool IsSuccess { get; set; }
-            public string ErrorMessage { get; set; }
-            public string Token { get; set; }
+            public string ErrorMessage { get; set; } = string.Empty;
+            public string Token { get; set; } = string.Empty;
         }
 
         public class LoginModel
         {
-            public string Email { get; set; }
-            public string Password { get; set; }
+            public string Email { get; set; } = string.Empty;
+            public string Password { get; set; } = string.Empty;
+        }
+
+        public class RegisterModel
+        {
+            public string Email { get; set; } = string.Empty;
+            public string Password { get; set; } = string.Empty;
         }
     }
 }
+

@@ -34,63 +34,60 @@
     }
     else
     {
-        <table class="table table-hover">
-            <thead class="table-light">
-                <tr>
-                    <th>Fatto?</th>
-                    <th>Impegno</th>
-                    <th>Modifica</th>
-                    <th>Elimina</th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (var item in toDoItems)
-                {
-                    <tr>
-                        <td>
-                            <input type="checkbox" checked="@item.IsDone" @onchange="() => ToggleDone(item)" />
-                        </td>
-                        <td class="align-middle">
+        <div class="todo-list">
+            @foreach (var item in toDoItems)
+            {
+                <div class="todo-item">
+                    <div class="todo-header">
+                        <input type="checkbox" checked="@item.IsDone" @onchange="() => ToggleDone(item)" />
+                        <span class="todo-title" @onclick="() => EditItem(item)">
                             @if (editItem?.Id == item.Id)
                             {
-                                <InputText @bind-Value="editItem.Title" class="form-control"
-                                           @onkeydown="HandleKeyDown" />
+                                <InputText @bind-Value="editItem.Title" class="form-control" @onkeydown="HandleKeyDown" />
                             }
                             else
                             {
-                                <span @onclick="() => EditItem(item)">@item.Title</span>
+                                @item.Title
                             }
-                        </td>
-                        <td class="align-middle">
-                            @if (editItem?.Id == item.Id)
-                            {
-                                <button class="btn btn-success btn-sm me-2" @onclick="SaveEdit">
-                                    <i class="bi bi-check-lg"></i> Salva
-                                </button>
-                                <button class="btn btn-secondary btn-sm" @onclick="CancelEdit">
-                                    <i class="bi bi-x-lg"></i> Annulla
-                                </button>
-                            }
-                            else
-                            {
-                                <button class="btn btn-info btn-sm" @onclick="() => EditItem(item)">
-                                    <i class="bi bi-pencil-square"></i> Modifica
-                                </button>
-                            }
-                        </td>
-                        <td class="align-middle">
-                            <button class="btn btn-danger btn-sm" @onclick="() => DeleteItem(item.Id)">
+                        </span>
+                    </div>
+                    <div class="todo-actions">
+                        @if (editItem?.Id == item.Id)
+                        {
+                            <button class="btn btn-success btn-sm" @onclick="SaveEdit">
+                                <i class="bi bi-check-lg"></i> Salva
+                            </button>
+                            <button class="btn btn-secondary btn-sm" @onclick="CancelEdit">
+                                <i class="bi bi-x-lg"></i> Annulla
+                            </button>
+                        }
+                        else if (itemToConfirmDelete?.Id == item.Id)
+                        {
+                            <span class="me-2 text-danger">Confermi eliminazione?</span>
+                            <button class="btn btn-danger btn-sm" @onclick="() => ConfirmDelete(item.Id)">
+                                Sì
+                            </button>
+                            <button class="btn btn-secondary btn-sm" @onclick="CancelDelete">
+                                No
+                            </button>
+                        }
+                        else
+                        {
+                            <button class="btn btn-info btn-sm" @onclick="() => EditItem(item)">
+                                <i class="bi bi-pencil-square"></i> Modifica
+                            </button>
+                            <button class="btn btn-danger btn-sm" @onclick="() => AskDeleteConfirmation(item)">
                                 <i class="bi bi-trash"></i> Elimina
                             </button>
-                        </td>
-                    </tr>
-                }
-            </tbody>
-        </table>
+                        }
+                    </div>
+                </div>
+            }
+        </div>
     }
 </div>
 
-<div>
+<div class="mt-4">
     <button class="btn btn-danger" @onclick="LogOut">Logout</button>
 </div>
 
@@ -98,6 +95,7 @@
     private List<ToDoItem> toDoItems;
     private ToDoItem newItem = new() { Title = string.Empty };
     private ToDoItem? editItem;
+    private ToDoItem? itemToConfirmDelete;
     private bool _dataLoaded = false;
     private bool isReady = false;
 
@@ -157,17 +155,28 @@
 
     private void CancelEdit() => editItem = null;
 
-    private async Task DeleteItem(int id)
+    private void AskDeleteConfirmation(ToDoItem item)
+    {
+        itemToConfirmDelete = item;
+    }
+
+    private async Task ConfirmDelete(int id)
     {
         if (!isReady) return;
         await ToDoService.DeleteToDoItemAsync(id);
+        itemToConfirmDelete = null;
         await LoadToDoItems();
+    }
+
+    private void CancelDelete()
+    {
+        itemToConfirmDelete = null;
     }
 
     private async Task LogOut()
     {
         await AuthService.LogoutAsync();
-        _navigation.NavigateTo("/login", true);
+        _navigation.NavigateTo("/", true);
     }
 
     private async Task HandleKeyDown(KeyboardEventArgs e)

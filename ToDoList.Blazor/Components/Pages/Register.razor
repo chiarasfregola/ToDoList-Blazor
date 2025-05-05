@@ -1,56 +1,48 @@
 @page "/register"
-@using ToDoApi.Models
+@using Services
 @inject AuthService AuthService
 @inject NavigationManager _navigation
 @rendermode RenderMode.InteractiveServer
 
 <PageTitle>Registrazione</PageTitle>
 
-<h1>Form di Registrazione</h1>
+<div class="auth-container">
+    <h1 class="auth-title">Form di Registrazione</h1>
 
-<EditForm Model="@registrationModel" OnValidSubmit="@SavingUser" FormName="EditForm">
-    <DataAnnotationsValidator />
-    <div class="form-group">
-        <label>Email</label>
-        <InputText @bind-Value="registrationModel.Email" class="form-control" />
-    </div>
+    <EditForm Model="@registrationModel" OnValidSubmit="@SavingUser">
+        <DataAnnotationsValidator />
+        <div class="form-group">
+            <label>Email</label>
+            <InputText @bind-Value="registrationModel.Email" class="form-control" />
+        </div>
 
-    <div class="form-group">
-        <label>Password</label>
-        <InputText @bind-Value="registrationModel.Password" class="form-control" type="password" />
-    </div>
+        <div class="form-group">
+            <label>Password</label>
+            <InputText @bind-Value="registrationModel.Password" class="form-control" type="password" />
+        </div>
 
-    <button type="submit" class="btn btn-primary">Registrati</button>
-    
-    @if (!string.IsNullOrEmpty(ErrorMessage))
-    {
-        <div class="alert alert-danger mt-2">@ErrorMessage</div>
-    }
-</EditForm>
+        <button type="submit" class="btn btn-primary">Registrati</button>
 
-
-@if (!string.IsNullOrEmpty(ErrorMessage))
-{
-    <div class="alert alert-danger">
-        @ErrorMessage
-    </div>
-}
+        @if (!string.IsNullOrEmpty(ErrorMessage))
+        {
+            <div class="alert alert-danger mt-2">@ErrorMessage</div>
+        }
+    </EditForm>
+</div>
 
 @code {
-    private RegisterModel registrationModel = new RegisterModel();
-    private string ErrorMessage = "";
+    private AuthService.RegisterModel registrationModel = new();
+    private string ErrorMessage = string.Empty;
 
     private async Task SavingUser()
     {
-        // Verifica se i dati sono valorizzati correttamente
-        Console.WriteLine($"Email: {registrationModel.Email}");
-        Console.WriteLine($"Password: {registrationModel.Password}");
-
         if (string.IsNullOrEmpty(registrationModel.Email) || string.IsNullOrEmpty(registrationModel.Password))
         {
             ErrorMessage = "Email e Password sono obbligatori.";
             return;
         }
+
+        AuthService.EnableJsInterop();
 
         var result = await AuthService.RegisterAsync(registrationModel.Email, registrationModel.Password);
 
@@ -62,13 +54,5 @@
         {
             ErrorMessage = result.ErrorMessage;
         }
-    }
-
-
-    // Modello per la registrazione
-    public class RegisterModel
-    {
-        public string Email { get; set; }
-        public string Password { get; set; }
     }
 }
