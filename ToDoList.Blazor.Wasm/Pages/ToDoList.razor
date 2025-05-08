@@ -1,0 +1,178 @@
+﻿@page "/todolist"
+@using Services
+@using Models
+@inject AuthService AuthService
+@inject ToDoService ToDoService
+@inject NavigationManager NavigationManager
+
+<div class="todo-container">
+    <h2 class="todo-title-page">La tua ToDo List</h2>
+
+    <div class="todo-input-container">
+        <input class="form-control" placeholder="Nuovo impegno..." @bind="newItem.Title" />
+        <button class="btn btn-primary" @onclick="AddItem">Aggiungi</button>
+    </div>
+
+    @if (toDoItems == null)
+    {
+        <p>Caricamento...</p>
+    }
+    else if (!toDoItems.Any())
+    {
+        <p>Non ci sono impegni nella tua ToDo List. Aggiungine uno!</p>
+    }
+    else
+    {
+        <div class="todo-list">
+            @foreach (var item in toDoItems)
+            {
+                <div class="todo-item">
+                    <div class="todo-content">
+                        <input type="checkbox" checked="@item.IsDone" @onchange="() => ToggleDone(item)" />
+                        <span class="todo-title">
+                            @if (editItem?.Id == item.Id)
+                            {
+                                <InputText @bind-Value="editTitle" class="form-control edit-input" @onkeydown="HandleKeyDown" />
+                            }
+                            else
+                            {
+                                @if (item.IsDone)
+                                {
+                                    <s>@item.Title</s>
+                                }
+                                else
+                                {
+                                    @item.Title
+                                }
+                            }
+                        </span>
+
+                        <div class="todo-actions">
+                            @if (editItem?.Id == item.Id)
+                            {
+                                <button class="btn btn-success" @onclick="SaveEdit">Salva</button>
+                                <button class="btn btn-secondary" @onclick="CancelEdit">Annulla</button>
+                            }
+                            else if (itemToConfirmDelete?.Id == item.Id)
+                            {
+                                <div class="todo-confirmation">
+                                    <span>Sei sicuro di voler eliminare questo impegno?</span>
+                                    <button class="btn btn-danger" @onclick="() => ConfirmDelete(item.Id)">Sì</button>
+                                    <button class="btn btn-secondary" @onclick="CancelDelete">No</button>
+                                </div>
+                            }
+                            else
+                            {
+                                <button class="btn btn-info" @onclick="() => EditItem(item)">Modifica</button>
+                                <button class="btn btn-danger" @onclick="() => AskDeleteConfirmation(item)">Elimina</button>
+                            }
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+
+    <button class="btn btn-danger mt-4" @onclick="Logout">Logout</button>
+</div>
+
+@code {
+    private List<ToDoItem> toDoItems = new();
+    private ToDoItem newItem = new();
+    private ToDoItem? editItem;
+    private string? editTitle;
+    private ToDoItem? itemToConfirmDelete;
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (!await AuthService.IsAuthenticatedAsync())
+        {
+            NavigationManager.NavigateTo("/login");
+            return;
+        }
+
+        await LoadItems();
+    }
+
+    private async Task LoadItems()
+    {
+        toDoItems = await ToDoService.GetToDoItemsAsync();
+    }
+
+    private async Task AddItem()
+    {
+        if (!string.IsNullOrWhiteSpace(newItem.Title))
+        {
+            await ToDoService.CreateToDoItemAsync(newItem);
+            newItem = new();
+            await LoadItems();
+        }
+    }
+
+    private void EditItem(ToDoItem item)
+    {
+        editItem = item;
+        editTitle = item.Title;
+    }
+
+    private async Task SaveEdit()
+    {
+        try
+        {
+            if (editItem != null && !string.IsNullOrWhiteSpace(editTitle))
+            {
+                var updatedItem = new ToDoItem
+                {
+                    Id = editItem.Id,
+                    Title = editTitle,
+                    IsDone = editItem.IsDone
+                };
+
+                await ToDoService.UpdateToDoItemAsync(updatedItem);
+                editItem = null;
+                editTitle = null;
+                await LoadItems();
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Errore durante il salvataggio: {ex.Message}");
+        }
+    }
+
+    private void CancelEdit()
+    {
+        editItem = null;
+        editTitle = null;
+    }
+
+    private async Task ToggleDone(ToDoItem item)
+    {
+        item.IsDone = !item.IsDone;
+        await ToDoService.UpdateToDoItemAsync(item);
+        await LoadItems();
+    }
+
+    private void AskDeleteConfirmation(ToDoItem item) => itemToConfirmDelete = item;
+
+    private void CancelDelete() => itemToConfirmDelete = null;
+
+    private async Task ConfirmDelete(int id)
+    {
+        await ToDoService.DeleteToDoItemAsync(id);
+        itemToConfirmDelete = null;
+        await LoadItems();
+    }
+
+    private async Task Logout()
+    {
+        await AuthService.LogoutAsync();
+        NavigationManager.NavigateTo("/");
+    }
+
+    private async Task HandleKeyDown(KeyboardEventArgs e)
+    {
+        if (e.Key == "Enter") await SaveEdit();
+        else if (e.Key == "Escape") CancelEdit();
+    }
+}

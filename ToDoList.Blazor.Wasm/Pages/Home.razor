@@ -1,0 +1,25 @@
+﻿@page "/"
+@using Services
+@inject NavigationManager Navigation
+@inject AuthService AuthService
+
+<PageTitle>Home</PageTitle>
+
+<div class="home-container">
+    <h1>Benvenuto su ToDoList!</h1>
+    <p class="home-subtitle">
+        Organizza le tue attività in modo semplice ed efficace.<br />
+        Registrati per iniziare o accedi se hai già un account.
+    </p>
+
+    <div class="home-buttons">
+        <button class="home-button register" @onclick="NavigateToRegister">Registrati</button>
+        <button class="home-button login" @onclick="NavigateToLogin">Login</button>
+    </div>
+</div>
+
+@code {
+
+    private void NavigateToRegister() => Navigation.NavigateTo("/register");
+    private void NavigateToLogin() => Navigation.NavigateTo("/login");
+}

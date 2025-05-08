@@ -1,0 +1,67 @@
+.page[b-ss7dabj8dp] {
+    position: relative;
+    display: flex; /*attivo la flexbox x layout dinamico*/
+    flex-direction: row; /*sidebar e contenuto disposti orizzonatalmente*/
+}
+
+.sidebar[b-ss7dabj8dp] {
+    width: 250px; /*larghezza fissa della sidebar */
+    background-image: solid #d6d5d5;
+    height: 100vh; /*sidebar occupa tutta l'altezza della pagina */
+    position: sticky; /*fissa in alto anche se si scrolla la pagina*/
+    top: 0;
+    padding-top: 1rem; /* Padding per evitare che gli elementi tocchino il bordo superiore */
+}
+
+main[b-ss7dabj8dp] {
+    flex: 1; /*contenuto principale occupa lo spazio rimanente */
+    padding: 2rem; /*per non far toccare il contenuto ai bordi*/
+}
+
+/*barra superiore*/
+.top-row[b-ss7dabj8dp] {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #d6d5d5;
+    justify-content: flex-end; /*allinea a destra*/
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+/*spazio tra i pulsanti di autenticazione*/
+.auth-buttons[b-ss7dabj8dp] {
+    display: flex;
+    gap: 1rem;
+}
+
+/*link della barra superiore*/
+.top-row[b-ss7dabj8dp]  a,
+.top-row[b-ss7dabj8dp]  .btn-link {
+    white-space: nowrap;
+    margin-left: 1.5rem;
+    text-decoration: none;
+}
+
+.top-row[b-ss7dabj8dp]  a:hover, /*sottolineatura al passaggio del mouse*/
+.top-row[b-ss7dabj8dp]  .btn-link:hover {
+    text-decoration: underline;
+}
+
+/*per schemi più piccoli*/
+@media (max-width: 640.98px){
+    .page[b-ss7dabj8dp] {
+        flex-direction: column; /*sidebar sopra il contenuto (non più orizzontale)*/
+    }
+    .sidebar[b-ss7dabj8dp] {
+        width: 100%; /*sidebar prende tutta la larghezza*/
+        height: auto; /*sidebar si adatta in altezza */
+    }
+    .top-row[b-ss7dabj8dp] {
+        justify-content: space-between;
+    }
+    .top-row[b-ss7dabj8dp]  a,
+    .top-row[b-ss7dabj8dp]  .btn-link {
+        margin-left: 0;
+    }
+}

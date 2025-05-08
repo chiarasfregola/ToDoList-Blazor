@@ -1,0 +1,106 @@
+/*nascondo il menu nei piccoli dispositivi*/
+.navbar-toggler[b-73ua0du4j4] {
+    appearance: none;
+    cursor: pointer; /*cursore a mano sui tasti*/
+    width: 3.5rem;
+    height: 3.5rem;
+    color: white;
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    border: none;
+    background: #cfaaff;
+    border-radius: 50%;
+}
+
+/*header*/
+.top-row[b-73ua0du4j4] {
+    min-height: 4rem;
+    background-color: #e9dffd;
+    box-shadow: 0px 2px 5px rgba(216, 169, 255, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+/*Titolo-ToDoList.Blazor*/
+.navbar-brand[b-73ua0du4j4] {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/*pulsanti- Home e ToDoList (solo autenticati)*/
+.nav-item[b-73ua0du4j4] {
+    font-size: 1rem;
+    padding: 1rem;
+    color: #4f4f4f; /*colore del testo*/
+}
+
+/*spazio tra gli item*/
+.nav-item:first-of-type[b-73ua0du4j4] {
+    padding-top: 2rem;
+}
+
+.nav-item:last-of-type[b-73ua0du4j4] {
+    padding-bottom: 2rem;
+}
+
+/*stile pulsanti*/
+.nav-item[b-73ua0du4j4]  .nav-link {
+    color: #333;
+    background-color: transparent;
+    border: none;
+    border-radius: 8px; /*angoli arrotondati*/
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 1.5rem;
+    width: 100%;
+    transition: font-weight 0.2s ease;
+}
+.nav-item[b-73ua0du4j4]  a.active,
+.nav-item[b-73ua0du4j4]  .nav-link.home {
+    background-color: #cfaaff;
+    color: #fff;
+    font-weight: bold;
+}
+
+/*hover grassetto*/
+.nav-item[b-73ua0du4j4]  .nav-link:hover {
+    font-weight: bold;
+}
+
+/*menu collassabile*/
+.nav-scrollable[b-73ua0du4j4] {
+    display: none;
+    background-color: #e9dffd;
+}
+
+.navbar-toggler:checked ~ .nav-scrollable[b-73ua0du4j4] {
+    display: block;
+    background-color: #e9dffd;
+    height: 100%;
+    overflow-y: auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/*per schermi più larghi*/
+@media (min-width: 641px) {
+    .navbar-toggler[b-73ua0du4j4] {
+        display: none;
+    }
+    .nav-scrollable[b-73ua0du4j4] {
+        display: block;
+        height: calc(100vh - 4rem);
+        overflow-y: auto;
+        padding-top: 2rem;
+    }
+
+    .nav-item[b-73ua0du4j4] {
+        padding: 1.5rem;
+    }
+}
+

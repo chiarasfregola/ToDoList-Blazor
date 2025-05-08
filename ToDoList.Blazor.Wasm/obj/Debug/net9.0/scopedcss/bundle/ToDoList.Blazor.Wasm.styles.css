@@ -1,0 +1,460 @@
+/* /Layout/MainLayout.razor.rz.scp.css */
+.page[b-ss7dabj8dp] {
+    position: relative;
+    display: flex; /*attivo la flexbox x layout dinamico*/
+    flex-direction: row; /*sidebar e contenuto disposti orizzonatalmente*/
+}
+
+.sidebar[b-ss7dabj8dp] {
+    width: 250px; /*larghezza fissa della sidebar */
+    background-image: solid #d6d5d5;
+    height: 100vh; /*sidebar occupa tutta l'altezza della pagina */
+    position: sticky; /*fissa in alto anche se si scrolla la pagina*/
+    top: 0;
+    padding-top: 1rem; /* Padding per evitare che gli elementi tocchino il bordo superiore */
+}
+
+main[b-ss7dabj8dp] {
+    flex: 1; /*contenuto principale occupa lo spazio rimanente */
+    padding: 2rem; /*per non far toccare il contenuto ai bordi*/
+}
+
+/*barra superiore*/
+.top-row[b-ss7dabj8dp] {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #d6d5d5;
+    justify-content: flex-end; /*allinea a destra*/
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+/*spazio tra i pulsanti di autenticazione*/
+.auth-buttons[b-ss7dabj8dp] {
+    display: flex;
+    gap: 1rem;
+}
+
+/*link della barra superiore*/
+.top-row[b-ss7dabj8dp]  a,
+.top-row[b-ss7dabj8dp]  .btn-link {
+    white-space: nowrap;
+    margin-left: 1.5rem;
+    text-decoration: none;
+}
+
+.top-row[b-ss7dabj8dp]  a:hover, /*sottolineatura al passaggio del mouse*/
+.top-row[b-ss7dabj8dp]  .btn-link:hover {
+    text-decoration: underline;
+}
+
+/*per schemi più piccoli*/
+@media (max-width: 640.98px){
+    .page[b-ss7dabj8dp] {
+        flex-direction: column; /*sidebar sopra il contenuto (non più orizzontale)*/
+    }
+    .sidebar[b-ss7dabj8dp] {
+        width: 100%; /*sidebar prende tutta la larghezza*/
+        height: auto; /*sidebar si adatta in altezza */
+    }
+    .top-row[b-ss7dabj8dp] {
+        justify-content: space-between;
+    }
+    .top-row[b-ss7dabj8dp]  a,
+    .top-row[b-ss7dabj8dp]  .btn-link {
+        margin-left: 0;
+    }
+}
+/* /Layout/NavMenu.razor.rz.scp.css */
+/*nascondo il menu nei piccoli dispositivi*/
+.navbar-toggler[b-73ua0du4j4] {
+    appearance: none;
+    cursor: pointer; /*cursore a mano sui tasti*/
+    width: 3.5rem;
+    height: 3.5rem;
+    color: white;
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    border: none;
+    background: #cfaaff;
+    border-radius: 50%;
+}
+
+/*header*/
+.top-row[b-73ua0du4j4] {
+    min-height: 4rem;
+    background-color: #e9dffd;
+    box-shadow: 0px 2px 5px rgba(216, 169, 255, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+/*Titolo-ToDoList.Blazor*/
+.navbar-brand[b-73ua0du4j4] {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/*pulsanti- Home e ToDoList (solo autenticati)*/
+.nav-item[b-73ua0du4j4] {
+    font-size: 1rem;
+    padding: 1rem;
+    color: #4f4f4f; /*colore del testo*/
+}
+
+/*spazio tra gli item*/
+.nav-item:first-of-type[b-73ua0du4j4] {
+    padding-top: 2rem;
+}
+
+.nav-item:last-of-type[b-73ua0du4j4] {
+    padding-bottom: 2rem;
+}
+
+/*stile pulsanti*/
+.nav-item[b-73ua0du4j4]  .nav-link {
+    color: #333;
+    background-color: transparent;
+    border: none;
+    border-radius: 8px; /*angoli arrotondati*/
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 1.5rem;
+    width: 100%;
+    transition: font-weight 0.2s ease;
+}
+.nav-item[b-73ua0du4j4]  a.active,
+.nav-item[b-73ua0du4j4]  .nav-link.home {
+    background-color: #cfaaff;
+    color: #fff;
+    font-weight: bold;
+}
+
+/*hover grassetto*/
+.nav-item[b-73ua0du4j4]  .nav-link:hover {
+    font-weight: bold;
+}
+
+/*menu collassabile*/
+.nav-scrollable[b-73ua0du4j4] {
+    display: none;
+    background-color: #e9dffd;
+}
+
+.navbar-toggler:checked ~ .nav-scrollable[b-73ua0du4j4] {
+    display: block;
+    background-color: #e9dffd;
+    height: 100%;
+    overflow-y: auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/*per schermi più larghi*/
+@media (min-width: 641px) {
+    .navbar-toggler[b-73ua0du4j4] {
+        display: none;
+    }
+    .nav-scrollable[b-73ua0du4j4] {
+        display: block;
+        height: calc(100vh - 4rem);
+        overflow-y: auto;
+        padding-top: 2rem;
+    }
+
+    .nav-item[b-73ua0du4j4] {
+        padding: 1.5rem;
+    }
+}
+
+/* /Pages/Home.razor.rz.scp.css */
+.home-container[b-9ygziam7b3] {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #f6f3fb;
+}
+
+.home-subtitle[b-9ygziam7b3] {
+    font-size: 1.2rem;
+    margin: 1rem 0 2rem;
+    color: #555;
+}
+
+/* Stile comune per il pulsante */
+.home-button[b-9ygziam7b3] {
+    font-size: 1rem;
+    padding: 0.75rem 2rem;
+    text-decoration: none; /* Rimuove la decorazione del link */
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, font-weight 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+    display: inline-block;
+    font-weight: normal;
+    border: none; /* Rimuove il contorno */
+}
+
+/* Pulsante Registrati */
+.home-button.register[b-9ygziam7b3] {
+    background-color: #d8bbff;
+    color: white;
+}
+
+/* Pulsante Login*/
+.home-button.login[b-9ygziam7b3] {
+    background-color: #d8bbff;
+    color: white;
+}
+
+/* hover per i pulsanti */
+.home-button:hover[b-9ygziam7b3] {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    font-weight: bold;
+}
+/* /Pages/Login.razor.rz.scp.css */
+.auth-container[b-ft795abhzq] {
+    background-color: #f6f3fb;
+    padding: 4rem 2rem;
+    max-width: 600px;
+    margin: 4rem auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.auth-title[b-ft795abhzq] {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #4a4a4a;
+}
+
+.form-group[b-ft795abhzq] {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label[b-ft795abhzq] {
+    font-weight: bold;
+    color: #555;
+}
+
+.form-control[b-ft795abhzq] {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-top: 0.5rem;
+}
+
+.form-control:focus[b-ft795abhzq] {
+    border-color: #d8bbff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(216, 187, 255, 0.6);
+}
+
+button[type="submit"][b-ft795abhzq],
+button[b-ft795abhzq] {
+    background-color: #d8bbff;
+    color: white;
+    padding: 0.75rem 2rem;
+    border-radius: 8px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, font-weight 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    font-weight: normal;
+}
+
+button[type="submit"]:hover[b-ft795abhzq],
+button:hover[b-ft795abhzq] {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+}
+
+.alert[b-ft795abhzq] {
+    background-color: #f8d7da;
+    color: #721c24;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+}
+
+a[b-ft795abhzq] {
+    display: block;
+    text-align: center;
+    color: #6f42c1;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+a:hover[b-ft795abhzq] {
+    text-decoration: underline;
+}
+/* /Pages/Register.razor.rz.scp.css */
+.auth-container[b-l05838egx7] {
+    background-color: #f6f3fb;
+    padding: 4rem 2rem;
+    max-width: 600px;
+    margin: 4rem auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.auth-title[b-l05838egx7] {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #4a4a4a;
+}
+
+.form-group[b-l05838egx7] {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label[b-l05838egx7] {
+    font-weight: bold;
+    color: #555;
+}
+
+.form-control[b-l05838egx7] {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-top: 0.5rem;
+}
+
+.form-control:focus[b-l05838egx7] {
+    border-color: #d8bbff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(216, 187, 255, 0.6);
+}
+
+button[type="submit"][b-l05838egx7] {
+    background-color: #d8bbff;
+    color: white;
+    padding: 0.75rem 2rem;
+    border-radius: 8px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, font-weight 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    font-weight: normal;
+}
+
+button[type="submit"]:hover[b-l05838egx7] {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+}
+
+.alert[b-l05838egx7] {
+    background-color: #f8d7da;
+    color: #721c24;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+a[b-l05838egx7] {
+    display: block;
+    text-align: center;
+    color: #6c4aac;
+    font-weight: 500;
+    text-decoration: none;
+    margin-top: 1rem;
+}
+
+a:hover[b-l05838egx7] {
+    text-decoration: underline;
+}
+/* /Pages/ToDoList.razor.rz.scp.css */
+.todo-container[b-ly3ogfce78] {
+    margin-top: 2rem;
+    padding: 1rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.todo-title-page[b-ly3ogfce78] {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.todo-input-container[b-ly3ogfce78] {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.todo-list[b-ly3ogfce78] {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.todo-item[b-ly3ogfce78] {
+    background-color: #f6f3fb;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.todo-content[b-ly3ogfce78] {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.todo-title[b-ly3ogfce78] {
+    flex-grow: 1;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-left: 0.5rem;
+    cursor: pointer;
+}
+
+.edit-input[b-ly3ogfce78] {
+    width: 100%;
+}
+
+.todo-actions[b-ly3ogfce78] {
+    display: flex;
+    gap: 0.4rem;
+}
+
+.todo-actions .btn[b-ly3ogfce78],
+.todo-confirmation .btn[b-ly3ogfce78] {
+    font-size: 0.85rem;
+    padding: 0.35rem 0.7rem;
+    border-radius: 6px;
+}
+
+.todo-confirmation[b-ly3ogfce78] {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+    color: #dc3545;
+    font-weight: 500;
+}
+
+input[type="checkbox"][b-ly3ogfce78] {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+

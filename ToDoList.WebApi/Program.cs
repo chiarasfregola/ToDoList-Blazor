@@ -7,19 +7,18 @@ using ToDoApi.Data;
 using ToDoApi.Models;
 using Swashbuckle.AspNetCore.SwaggerUI;
 
-//builder: configurazione dei servizi e configurazione dell'applicazione
 var builder = WebApplication.CreateBuilder(args);
 
-//configurazione Db
+// CONFIGURAZIONE DATABASE
 builder.Services.AddDbContext<ToDoContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-//condigurazione dell'identity
+// CONFIGURAZIONE IDENTITY
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
     .AddEntityFrameworkStores<ToDoContext>()
     .AddDefaultTokenProviders();
 
-//token JWT
+// CONFIGURAZIONE JWT
 builder.Services.AddAuthentication(options =>
 {
     options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -41,21 +40,22 @@ builder.Services.AddAuthentication(options =>
     };
 });
 
-//controller
-builder.Services.AddControllers();
-
-//accesso Blazor-API
+// CORS PER BLAZOR WASM
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowBlazorClient", policy =>
     {
-        policy.WithOrigins("https://localhost:7221") // URL Blazor
+        policy.WithOrigins("https://localhost:7233") // URL del frontend Blazor WASM
               .AllowAnyMethod()
-              .AllowAnyHeader();
+              .AllowAnyHeader()
+              .AllowCredentials(); // se usi autenticazione con cookie o localStorage
     });
 });
 
-//swagger
+// CONTROLLERS
+builder.Services.AddControllers();
+
+// SWAGGER
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(options =>
 {
@@ -90,10 +90,10 @@ builder.Services.AddSwaggerGen(options =>
     });
 });
 
-
+// BUILD
 var app = builder.Build();
 
-// 8. Middleware
+// MIDDLEWARE
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -109,8 +109,8 @@ app.UseHttpsRedirection();
 
 app.UseCors("AllowBlazorClient");
 
-app.UseAuthentication(); // Aggiunge l'autenticazione
-app.UseAuthorization();  // Aggiunge l'autorizzazione
+app.UseAuthentication();
+app.UseAuthorization();
 
 app.MapControllers();
 

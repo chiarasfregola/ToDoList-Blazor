@@ -6,7 +6,7 @@ using ToDoApi.Data;
 
 namespace ToDoList.WebApi.Controllers
 {
-    [Authorize]
+    [Authorize()]
     [Route("api/[controller]")]
     [ApiController]
     public class ToDoController : ControllerBase
@@ -71,11 +71,11 @@ namespace ToDoList.WebApi.Controllers
             var userId = User.Identity?.Name;
 
             if (id != toDoItem.Id)
-                return BadRequest();
+                return BadRequest("ID mismatch");
 
-            var existing = await _context.ToDoItems.AsNoTracking().FirstOrDefaultAsync(t => t.Id == id);
+            var existing = await _context.ToDoItems.AsNoTracking().FirstOrDefaultAsync(t => t.Id == id && t.UserId == userId);
 
-            if (existing == null || existing.UserId != userId)
+            if (existing == null)
                 return NotFound();
 
             toDoItem.UserId = userId;
@@ -93,7 +93,7 @@ namespace ToDoList.WebApi.Controllers
                     throw;
             }
 
-            return NoContent();
+            return Ok(toDoItem);
         }
 
         // DELETE: api/todo/5
