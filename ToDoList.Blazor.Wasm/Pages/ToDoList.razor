@@ -1,6 +1,7 @@
 ﻿@page "/todolist"
 @using Services
 @using Models
+@attribute [Authorize]
 @inject AuthService AuthService
 @inject ToDoService ToDoService
 @inject NavigationManager NavigationManager
@@ -32,17 +33,19 @@
                         <span class="todo-title">
                             @if (editItem?.Id == item.Id)
                             {
-                                <InputText @bind-Value="editTitle" class="form-control edit-input" @onkeydown="HandleKeyDown" />
+                                <InputText @bind-Value="editTitle"
+                                           class="form-control edit-input"
+                                           @onkeydown="HandleKeyDown" />
                             }
                             else
                             {
                                 @if (item.IsDone)
                                 {
-                                    <s>@item.Title</s>
+                                    <s @onclick="() => EditItem(item)" style="cursor: pointer;">@item.Title</s>
                                 }
                                 else
                                 {
-                                    @item.Title
+                                    <span @onclick="() => EditItem(item)" style="cursor: pointer;">@item.Title</span>
                                 }
                             }
                         </span>
@@ -117,27 +120,18 @@
 
     private async Task SaveEdit()
     {
-        try
-        {
-            if (editItem != null && !string.IsNullOrWhiteSpace(editTitle))
-            {
-                var updatedItem = new ToDoItem
-                {
-                    Id = editItem.Id,
-                    Title = editTitle,
-                    IsDone = editItem.IsDone
-                };
+        if (editItem is null || string.IsNullOrWhiteSpace(editTitle)) return;
 
-                await ToDoService.UpdateToDoItemAsync(updatedItem);
-                editItem = null;
-                editTitle = null;
-                await LoadItems();
-            }
-        }
-        catch (Exception ex)
+        await ToDoService.UpdateToDoItemAsync(new ToDoItem
         {
-            Console.WriteLine($"Errore durante il salvataggio: {ex.Message}");
-        }
+            Id = editItem.Id,
+            Title = editTitle,
+            IsDone = editItem.IsDone
+        });
+
+        editItem = null;
+        editTitle = null;
+        await LoadItems();
     }
 
     private void CancelEdit()

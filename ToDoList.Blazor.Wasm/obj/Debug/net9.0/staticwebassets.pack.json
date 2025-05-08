@@ -201,10 +201,6 @@
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\wwwroot\\sample-data\\weather.json",
-      "PackagePath": "staticwebassets\\sample-data\\weather.json"
-    },
-    {
       "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.ToDoList.Blazor.Wasm.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },

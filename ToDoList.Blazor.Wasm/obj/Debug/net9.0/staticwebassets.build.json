@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "RvRR8vhEvqtzPvdEYSTBL0BFd7CnHiPNRQz7KLwuQtc=",
+  "Hash": "U7+eg4XDfgbR+CgdvMqdDA912xjz6tQTaqxTZnNPG5I=",
   "Source": "ToDoList.Blazor.Wasm",
   "BasePath": "/",
   "Mode": "Root",
@@ -17,6 +17,27 @@
   ],
   "Assets": [
     {
+      "Identity": "C:\\Users\\msfregola\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.authentication\\9.0.4\\staticwebassets\\AuthenticationService.js",
+      "SourceId": "Microsoft.AspNetCore.Components.WebAssembly.Authentication",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\msfregola\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.authentication\\9.0.4\\staticwebassets\\",
+      "BasePath": "_content/Microsoft.AspNetCore.Components.WebAssembly.Authentication",
+      "RelativePath": "AuthenticationService.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "gcvjxldlff",
+      "Integrity": "kJXKqRCleT/Jk1wJUhUu24r2LAA7IWVYmdoENizE38M=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\msfregola\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.authentication\\9.0.4\\staticwebassets\\AuthenticationService.js"
+    },
+    {
       "Identity": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\bin\\Debug\\net9.0\\wwwroot\\_framework\\blazor.boot.json",
       "SourceId": "ToDoList.Blazor.Wasm",
       "SourceType": "Computed",
@@ -31,8 +52,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "manifest",
-      "Fingerprint": "62o7lb9hn1",
-      "Integrity": "cnmGE/OThEnXzXQRxXtzkAOnCjqaekMM6jN0ZDXeDlE=",
+      "Fingerprint": "55rlkxvh47",
+      "Integrity": "V5tbsGUo/fn49iCoT6QigHvaxcDnadkfYVN50wfgARk=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net9.0\\blazor.boot.json"
@@ -56,7 +77,7 @@
       "Integrity": "+vIfWRbrna1rF+s8xknbrluJxgPx4vfKB0WJ74HdICo=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\msfregola\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\9.0.1\\build\\net9.0\\blazor.webassembly.js"
+      "OriginalItemSpec": "C:\\Users\\msfregola\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\9.0.4\\build\\net9.0\\blazor.webassembly.js"
     },
     {
       "Identity": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Blazored.LocalStorage.wasm",
@@ -290,6 +311,27 @@
       "OriginalItemSpec": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\obj\\Debug\\net9.0\\webcil\\Microsoft.AspNetCore.Authorization.wasm"
     },
     {
+      "Identity": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Authorization.wasm",
+      "SourceId": "ToDoList.Blazor.Wasm",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\bin\\Debug\\net9.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.Authorization#[.{fingerprint}]!.wasm",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "WasmResource",
+      "AssetTraitValue": "runtime",
+      "Fingerprint": "772p6pfrjn",
+      "Integrity": "na4Yi6uPdTGOMF9sJ/UdcxOL5gxDR7BgNVKWbr4WXHY=",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\obj\\Debug\\net9.0\\webcil\\Microsoft.AspNetCore.Components.Authorization.wasm"
+    },
+    {
       "Identity": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Forms.wasm",
       "SourceId": "ToDoList.Blazor.Wasm",
       "SourceType": "Computed",
@@ -351,6 +393,27 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\obj\\Debug\\net9.0\\webcil\\Microsoft.AspNetCore.Components.Web.wasm"
+    },
+    {
+      "Identity": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.WebAssembly.Authentication.wasm",
+      "SourceId": "ToDoList.Blazor.Wasm",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\bin\\Debug\\net9.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.WebAssembly.Authentication#[.{fingerprint}]!.wasm",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "WasmResource",
+      "AssetTraitValue": "runtime",
+      "Fingerprint": "cuq7a3gbds",
+      "Integrity": "XIZfURK2QGOX6xSonSbSfl1TRKfD7tn5ZVh53gtU3qM=",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\obj\\Debug\\net9.0\\webcil\\Microsoft.AspNetCore.Components.WebAssembly.Authentication.wasm"
     },
     {
       "Identity": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.WebAssembly.wasm",
@@ -4273,8 +4336,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "symbol",
-      "Fingerprint": "rmcvikpw2k",
-      "Integrity": "Tfw05J/QU7TBn4hXIQLVjj6J79q6jaY3LBQH8r/Of6k=",
+      "Fingerprint": "dolfdhd17y",
+      "Integrity": "g8NhfyA2F1fEHjaduFaSToyigIf161YpoGD5R1BOrow=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net9.0\\ToDoList.Blazor.Wasm.pdb"
@@ -4294,8 +4357,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "runtime",
-      "Fingerprint": "wcxwpdcsq0",
-      "Integrity": "IMLvLM6TB6L/Z6t+XyLTLBjhz+q/SqNOYKyBI/6B3Cs=",
+      "Fingerprint": "szn2vwku7v",
+      "Integrity": "+KRskYGHaOFOsYe92adYtadiagwho44OHJDQNA74Jxo=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\obj\\Debug\\net9.0\\webcil\\ToDoList.Blazor.Wasm.wasm"
@@ -4595,7 +4658,7 @@
       "OriginalItemSpec": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.Security.Principal.Windows.wasm"
     },
     {
-      "Identity": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\obj\\Debug\\net9.0\\compressed\\2b9op31zc4-62o7lb9hn1.gz",
+      "Identity": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\obj\\Debug\\net9.0\\compressed\\2b9op31zc4-55rlkxvh47.gz",
       "SourceId": "ToDoList.Blazor.Wasm",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\obj\\Debug\\net9.0\\compressed\\",
@@ -4609,8 +4672,8 @@
       "RelatedAsset": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\bin\\Debug\\net9.0\\wwwroot\\_framework\\blazor.boot.json",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "8c19bnwafa",
-      "Integrity": "CJbcM+iQAuFHA8HeHIoR69FHWnHip5DbMmskq26Kh1I=",
+      "Fingerprint": "skujetzec7",
+      "Integrity": "jDPoNxZllQhxL2iKjdBPNwwWKKGlG6v2bz5Wt4DlOVg=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\bin\\Debug\\net9.0\\wwwroot\\_framework\\blazor.boot.json"
@@ -5181,27 +5244,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.Reflection.DispatchProxy.wasm"
-    },
-    {
-      "Identity": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\obj\\Debug\\net9.0\\compressed\\64ntm23dwm-iag0ou56lh.gz",
-      "SourceId": "ToDoList.Blazor.Wasm",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\obj\\Debug\\net9.0\\compressed\\",
-      "BasePath": "/",
-      "RelativePath": "sample-data/weather#[.{fingerprint=iag0ou56lh}]?.json.gz",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\wwwroot\\sample-data\\weather.json",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "Fingerprint": "4cbitfuojg",
-      "Integrity": "HD3vAUwurZXW96vdgG5RVLhMjmVeSgBs4iKLSw2+Uwk=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\wwwroot\\sample-data\\weather.json"
     },
     {
       "Identity": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\obj\\Debug\\net9.0\\compressed\\67kj9l42pd-l8i9ben6g9.gz",
@@ -6359,12 +6401,12 @@
       "OriginalItemSpec": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.Abstractions.wasm"
     },
     {
-      "Identity": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\obj\\Debug\\net9.0\\compressed\\eempxw0mjw-wcxwpdcsq0.gz",
+      "Identity": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\obj\\Debug\\net9.0\\compressed\\eempxw0mjw-szn2vwku7v.gz",
       "SourceId": "ToDoList.Blazor.Wasm",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/ToDoList.Blazor.Wasm#[.{fingerprint=wcxwpdcsq0}]!.wasm.gz",
+      "RelativePath": "_framework/ToDoList.Blazor.Wasm#[.{fingerprint=szn2vwku7v}]!.wasm.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -6373,8 +6415,8 @@
       "RelatedAsset": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\bin\\Debug\\net9.0\\wwwroot\\_framework\\ToDoList.Blazor.Wasm.wasm",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "uoxdkmklaj",
-      "Integrity": "Mujsrsyd4wj57bpkmrkkIGYsxNo2uM39610si65jGv0=",
+      "Fingerprint": "44rz0z8jbf",
+      "Integrity": "/N9j44/a7cD+npZ42Qq0TghNGYPxcKVICLXnsbOllKM=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\bin\\Debug\\net9.0\\wwwroot\\_framework\\ToDoList.Blazor.Wasm.wasm"
@@ -6504,6 +6546,27 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\bin\\Debug\\net9.0\\wwwroot\\_framework\\dotnet.runtime.js"
+    },
+    {
+      "Identity": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\obj\\Debug\\net9.0\\compressed\\f32kn295nz-gcvjxldlff.gz",
+      "SourceId": "Microsoft.AspNetCore.Components.WebAssembly.Authentication",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/Microsoft.AspNetCore.Components.WebAssembly.Authentication",
+      "RelativePath": "AuthenticationService.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\msfregola\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.authentication\\9.0.4\\staticwebassets\\AuthenticationService.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "max6bozg23",
+      "Integrity": "Dmk/HbaCkisGr8Vgk5M4ZS0yeQNNs/uoWecA7Wrysbs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\msfregola\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.authentication\\9.0.4\\staticwebassets\\AuthenticationService.js"
     },
     {
       "Identity": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\obj\\Debug\\net9.0\\compressed\\fa82swblfn-xl34mv7373.gz",
@@ -6756,6 +6819,27 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\bin\\Debug\\net9.0\\wwwroot\\_framework\\dotnet.runtime.js.map"
+    },
+    {
+      "Identity": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\obj\\Debug\\net9.0\\compressed\\h9wl56173m-cuq7a3gbds.gz",
+      "SourceId": "ToDoList.Blazor.Wasm",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.WebAssembly.Authentication#[.{fingerprint=cuq7a3gbds}]!.wasm.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.WebAssembly.Authentication.wasm",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "icvuro4n6d",
+      "Integrity": "zqooW+S9KIDZw4D+XJwv6Nahrl8nSEM8NYMMcxP7JRw=",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.WebAssembly.Authentication.wasm"
     },
     {
       "Identity": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\obj\\Debug\\net9.0\\compressed\\hjbwfiu99e-fl5q9pzcow.gz",
@@ -7136,6 +7220,27 @@
       "OriginalItemSpec": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.Runtime.Loader.wasm"
     },
     {
+      "Identity": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\obj\\Debug\\net9.0\\compressed\\k6mmnz83ty-772p6pfrjn.gz",
+      "SourceId": "ToDoList.Blazor.Wasm",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.Authorization#[.{fingerprint=772p6pfrjn}]!.wasm.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Authorization.wasm",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "q6022eye7x",
+      "Integrity": "ckecnlff1AU748wSaDMvffMqVYtqPpO2LT+G/aRlRco=",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Authorization.wasm"
+    },
+    {
       "Identity": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\obj\\Debug\\net9.0\\compressed\\kemfqvxazs-w3ew2t5qa6.gz",
       "SourceId": "ToDoList.Blazor.Wasm",
       "SourceType": "Computed",
@@ -7241,12 +7346,12 @@
       "OriginalItemSpec": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.Runtime.Handles.wasm"
     },
     {
-      "Identity": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\obj\\Debug\\net9.0\\compressed\\kojv9nc9nv-rmcvikpw2k.gz",
+      "Identity": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\obj\\Debug\\net9.0\\compressed\\kojv9nc9nv-dolfdhd17y.gz",
       "SourceId": "ToDoList.Blazor.Wasm",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/ToDoList.Blazor.Wasm#[.{fingerprint=rmcvikpw2k}]!.pdb.gz",
+      "RelativePath": "_framework/ToDoList.Blazor.Wasm#[.{fingerprint=dolfdhd17y}]!.pdb.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -7255,8 +7360,8 @@
       "RelatedAsset": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\bin\\Debug\\net9.0\\wwwroot\\_framework\\ToDoList.Blazor.Wasm.pdb",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "hkzkcaxtj9",
-      "Integrity": "78rNA515m+Sxc+M7GGKiKqUfheFKTM7SPQMrlQFu5rc=",
+      "Fingerprint": "koh5g7rmeh",
+      "Integrity": "PFvVsppptmafBjAP/sFspfHXM86b1UTxO4BOi8a6eJA=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\bin\\Debug\\net9.0\\wwwroot\\_framework\\ToDoList.Blazor.Wasm.pdb"
@@ -10704,30 +10809,146 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
-    },
-    {
-      "Identity": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\wwwroot\\sample-data\\weather.json",
-      "SourceId": "ToDoList.Blazor.Wasm",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "sample-data/weather#[.{fingerprint}]?.json",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "iag0ou56lh",
-      "Integrity": "enKgCMkYmCpfEcmg6Annbmc40VZ/A6aYYSQjZfVn2cU=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\sample-data\\weather.json"
     }
   ],
   "Endpoints": [
+    {
+      "Route": "_content/Microsoft.AspNetCore.Components.WebAssembly.Authentication/AuthenticationService.js",
+      "AssetFile": "C:\\Users\\msfregola\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.authentication\\9.0.4\\staticwebassets\\AuthenticationService.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "292380"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kJXKqRCleT/Jk1wJUhUu24r2LAA7IWVYmdoENizE38M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Mar 2025 17:04:57 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-kJXKqRCleT/Jk1wJUhUu24r2LAA7IWVYmdoENizE38M="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Microsoft.AspNetCore.Components.WebAssembly.Authentication/AuthenticationService.js",
+      "AssetFile": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\obj\\Debug\\net9.0\\compressed\\f32kn295nz-gcvjxldlff.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000013318062"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "75085"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Dmk/HbaCkisGr8Vgk5M4ZS0yeQNNs/uoWecA7Wrysbs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Mar 2025 17:04:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"kJXKqRCleT/Jk1wJUhUu24r2LAA7IWVYmdoENizE38M=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-kJXKqRCleT/Jk1wJUhUu24r2LAA7IWVYmdoENizE38M="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Microsoft.AspNetCore.Components.WebAssembly.Authentication/AuthenticationService.js.gz",
+      "AssetFile": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\obj\\Debug\\net9.0\\compressed\\f32kn295nz-gcvjxldlff.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "75085"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Dmk/HbaCkisGr8Vgk5M4ZS0yeQNNs/uoWecA7Wrysbs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Mar 2025 17:04:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Dmk/HbaCkisGr8Vgk5M4ZS0yeQNNs/uoWecA7Wrysbs="
+        }
+      ]
+    },
     {
       "Route": "_framework/blazor.boot.json",
       "AssetFile": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\bin\\Debug\\net9.0\\wwwroot\\_framework\\blazor.boot.json",
@@ -10739,7 +10960,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "39427"
+          "Value": "39972"
         },
         {
           "Name": "Content-Type",
@@ -10747,11 +10968,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"cnmGE/OThEnXzXQRxXtzkAOnCjqaekMM6jN0ZDXeDlE=\""
+          "Value": "\"V5tbsGUo/fn49iCoT6QigHvaxcDnadkfYVN50wfgARk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 10:06:30 GMT"
+          "Value": "Thu, 08 May 2025 15:26:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10761,18 +10982,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-cnmGE/OThEnXzXQRxXtzkAOnCjqaekMM6jN0ZDXeDlE="
+          "Value": "sha256-V5tbsGUo/fn49iCoT6QigHvaxcDnadkfYVN50wfgARk="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json",
-      "AssetFile": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\obj\\Debug\\net9.0\\compressed\\2b9op31zc4-62o7lb9hn1.gz",
+      "AssetFile": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\obj\\Debug\\net9.0\\compressed\\2b9op31zc4-55rlkxvh47.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000080886516"
+          "Quality": "0.000080096115"
         }
       ],
       "ResponseHeaders": [
@@ -10782,15 +11003,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12362"
+          "Value": "12484"
         },
         {
           "Name": "ETag",
-          "Value": "\"CJbcM+iQAuFHA8HeHIoR69FHWnHip5DbMmskq26Kh1I=\""
+          "Value": "\"jDPoNxZllQhxL2iKjdBPNwwWKKGlG6v2bz5Wt4DlOVg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 09:48:17 GMT"
+          "Value": "Thu, 08 May 2025 15:23:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10810,19 +11031,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"cnmGE/OThEnXzXQRxXtzkAOnCjqaekMM6jN0ZDXeDlE=\""
+          "Value": "W/\"V5tbsGUo/fn49iCoT6QigHvaxcDnadkfYVN50wfgARk=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-cnmGE/OThEnXzXQRxXtzkAOnCjqaekMM6jN0ZDXeDlE="
+          "Value": "sha256-V5tbsGUo/fn49iCoT6QigHvaxcDnadkfYVN50wfgARk="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json.gz",
-      "AssetFile": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\obj\\Debug\\net9.0\\compressed\\2b9op31zc4-62o7lb9hn1.gz",
+      "AssetFile": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\obj\\Debug\\net9.0\\compressed\\2b9op31zc4-55rlkxvh47.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10831,7 +11052,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12362"
+          "Value": "12484"
         },
         {
           "Name": "Content-Type",
@@ -10839,11 +11060,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"CJbcM+iQAuFHA8HeHIoR69FHWnHip5DbMmskq26Kh1I=\""
+          "Value": "\"jDPoNxZllQhxL2iKjdBPNwwWKKGlG6v2bz5Wt4DlOVg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 09:48:17 GMT"
+          "Value": "Thu, 08 May 2025 15:23:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10861,7 +11082,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-CJbcM+iQAuFHA8HeHIoR69FHWnHip5DbMmskq26Kh1I="
+          "Value": "sha256-jDPoNxZllQhxL2iKjdBPNwwWKKGlG6v2bz5Wt4DlOVg="
         }
       ]
     },
@@ -10888,7 +11109,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 11 Dec 2024 06:26:02 GMT"
+          "Value": "Fri, 14 Mar 2025 17:04:24 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10927,7 +11148,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 11 Dec 2024 06:26:02 GMT"
+          "Value": "Fri, 14 Mar 2025 17:04:24 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10980,7 +11201,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 11 Dec 2024 06:26:02 GMT"
+          "Value": "Fri, 14 Mar 2025 17:04:24 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -14281,6 +14502,304 @@
       ]
     },
     {
+      "Route": "_framework/Microsoft.AspNetCore.Components.Authorization.772p6pfrjn.wasm",
+      "AssetFile": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Authorization.wasm",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18709"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"na4Yi6uPdTGOMF9sJ/UdcxOL5gxDR7BgNVKWbr4WXHY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 11:08:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "772p6pfrjn"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/Microsoft.AspNetCore.Components.Authorization.wasm"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-na4Yi6uPdTGOMF9sJ/UdcxOL5gxDR7BgNVKWbr4WXHY="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Microsoft.AspNetCore.Components.Authorization.772p6pfrjn.wasm",
+      "AssetFile": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\obj\\Debug\\net9.0\\compressed\\k6mmnz83ty-772p6pfrjn.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000118301195"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8452"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ckecnlff1AU748wSaDMvffMqVYtqPpO2LT+G/aRlRco=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 11:08:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"na4Yi6uPdTGOMF9sJ/UdcxOL5gxDR7BgNVKWbr4WXHY=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "772p6pfrjn"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/Microsoft.AspNetCore.Components.Authorization.wasm"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-na4Yi6uPdTGOMF9sJ/UdcxOL5gxDR7BgNVKWbr4WXHY="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Microsoft.AspNetCore.Components.Authorization.772p6pfrjn.wasm.gz",
+      "AssetFile": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\obj\\Debug\\net9.0\\compressed\\k6mmnz83ty-772p6pfrjn.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8452"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ckecnlff1AU748wSaDMvffMqVYtqPpO2LT+G/aRlRco=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 11:08:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "772p6pfrjn"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/Microsoft.AspNetCore.Components.Authorization.wasm.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ckecnlff1AU748wSaDMvffMqVYtqPpO2LT+G/aRlRco="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Microsoft.AspNetCore.Components.Authorization.wasm",
+      "AssetFile": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Authorization.wasm",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18709"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"na4Yi6uPdTGOMF9sJ/UdcxOL5gxDR7BgNVKWbr4WXHY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 11:08:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-na4Yi6uPdTGOMF9sJ/UdcxOL5gxDR7BgNVKWbr4WXHY="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Microsoft.AspNetCore.Components.Authorization.wasm",
+      "AssetFile": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\obj\\Debug\\net9.0\\compressed\\k6mmnz83ty-772p6pfrjn.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000118301195"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8452"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ckecnlff1AU748wSaDMvffMqVYtqPpO2LT+G/aRlRco=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 11:08:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"na4Yi6uPdTGOMF9sJ/UdcxOL5gxDR7BgNVKWbr4WXHY=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-na4Yi6uPdTGOMF9sJ/UdcxOL5gxDR7BgNVKWbr4WXHY="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Microsoft.AspNetCore.Components.Authorization.wasm.gz",
+      "AssetFile": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\obj\\Debug\\net9.0\\compressed\\k6mmnz83ty-772p6pfrjn.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8452"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ckecnlff1AU748wSaDMvffMqVYtqPpO2LT+G/aRlRco=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 11:08:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ckecnlff1AU748wSaDMvffMqVYtqPpO2LT+G/aRlRco="
+        }
+      ]
+    },
+    {
       "Route": "_framework/Microsoft.AspNetCore.Components.Forms.9at76jd5um.wasm",
       "AssetFile": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Forms.wasm",
       "Selectors": [],
@@ -15332,6 +15851,304 @@
         {
           "Name": "integrity",
           "Value": "sha256-f93ADWbL+kD8bl6AtiIA8CT/phw7QB2ow6DnLU/Umzk="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Microsoft.AspNetCore.Components.WebAssembly.Authentication.cuq7a3gbds.wasm",
+      "AssetFile": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.WebAssembly.Authentication.wasm",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "63253"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XIZfURK2QGOX6xSonSbSfl1TRKfD7tn5ZVh53gtU3qM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 11:08:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cuq7a3gbds"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/Microsoft.AspNetCore.Components.WebAssembly.Authentication.wasm"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-XIZfURK2QGOX6xSonSbSfl1TRKfD7tn5ZVh53gtU3qM="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Microsoft.AspNetCore.Components.WebAssembly.Authentication.cuq7a3gbds.wasm",
+      "AssetFile": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\obj\\Debug\\net9.0\\compressed\\h9wl56173m-cuq7a3gbds.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000037979491"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "26329"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zqooW+S9KIDZw4D+XJwv6Nahrl8nSEM8NYMMcxP7JRw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 11:08:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"XIZfURK2QGOX6xSonSbSfl1TRKfD7tn5ZVh53gtU3qM=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cuq7a3gbds"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/Microsoft.AspNetCore.Components.WebAssembly.Authentication.wasm"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-XIZfURK2QGOX6xSonSbSfl1TRKfD7tn5ZVh53gtU3qM="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Microsoft.AspNetCore.Components.WebAssembly.Authentication.cuq7a3gbds.wasm.gz",
+      "AssetFile": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\obj\\Debug\\net9.0\\compressed\\h9wl56173m-cuq7a3gbds.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "26329"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zqooW+S9KIDZw4D+XJwv6Nahrl8nSEM8NYMMcxP7JRw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 11:08:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cuq7a3gbds"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/Microsoft.AspNetCore.Components.WebAssembly.Authentication.wasm.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zqooW+S9KIDZw4D+XJwv6Nahrl8nSEM8NYMMcxP7JRw="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Microsoft.AspNetCore.Components.WebAssembly.Authentication.wasm",
+      "AssetFile": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.WebAssembly.Authentication.wasm",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "63253"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XIZfURK2QGOX6xSonSbSfl1TRKfD7tn5ZVh53gtU3qM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 11:08:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-XIZfURK2QGOX6xSonSbSfl1TRKfD7tn5ZVh53gtU3qM="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Microsoft.AspNetCore.Components.WebAssembly.Authentication.wasm",
+      "AssetFile": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\obj\\Debug\\net9.0\\compressed\\h9wl56173m-cuq7a3gbds.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000037979491"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "26329"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zqooW+S9KIDZw4D+XJwv6Nahrl8nSEM8NYMMcxP7JRw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 11:08:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"XIZfURK2QGOX6xSonSbSfl1TRKfD7tn5ZVh53gtU3qM=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-XIZfURK2QGOX6xSonSbSfl1TRKfD7tn5ZVh53gtU3qM="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Microsoft.AspNetCore.Components.WebAssembly.Authentication.wasm.gz",
+      "AssetFile": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\obj\\Debug\\net9.0\\compressed\\h9wl56173m-cuq7a3gbds.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "26329"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zqooW+S9KIDZw4D+XJwv6Nahrl8nSEM8NYMMcxP7JRw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 11:08:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zqooW+S9KIDZw4D+XJwv6Nahrl8nSEM8NYMMcxP7JRw="
         }
       ]
     },
@@ -70603,7 +71420,7 @@
       ]
     },
     {
-      "Route": "_framework/ToDoList.Blazor.Wasm.pdb",
+      "Route": "_framework/ToDoList.Blazor.Wasm.dolfdhd17y.pdb",
       "AssetFile": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\bin\\Debug\\net9.0\\wwwroot\\_framework\\ToDoList.Blazor.Wasm.pdb",
       "Selectors": [],
       "ResponseHeaders": [
@@ -70613,7 +71430,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "37780"
+          "Value": "41280"
         },
         {
           "Name": "Content-Type",
@@ -70621,148 +71438,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Tfw05J/QU7TBn4hXIQLVjj6J79q6jaY3LBQH8r/Of6k=\""
+          "Value": "\"g8NhfyA2F1fEHjaduFaSToyigIf161YpoGD5R1BOrow=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 10:06:29 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-Tfw05J/QU7TBn4hXIQLVjj6J79q6jaY3LBQH8r/Of6k="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/ToDoList.Blazor.Wasm.pdb",
-      "AssetFile": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\obj\\Debug\\net9.0\\compressed\\kojv9nc9nv-rmcvikpw2k.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000035886026"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "27865"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"78rNA515m+Sxc+M7GGKiKqUfheFKTM7SPQMrlQFu5rc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 10:06:30 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"Tfw05J/QU7TBn4hXIQLVjj6J79q6jaY3LBQH8r/Of6k=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-Tfw05J/QU7TBn4hXIQLVjj6J79q6jaY3LBQH8r/Of6k="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/ToDoList.Blazor.Wasm.pdb.gz",
-      "AssetFile": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\obj\\Debug\\net9.0\\compressed\\kojv9nc9nv-rmcvikpw2k.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "27865"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"78rNA515m+Sxc+M7GGKiKqUfheFKTM7SPQMrlQFu5rc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 10:06:30 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-78rNA515m+Sxc+M7GGKiKqUfheFKTM7SPQMrlQFu5rc="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/ToDoList.Blazor.Wasm.rmcvikpw2k.pdb",
-      "AssetFile": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\bin\\Debug\\net9.0\\wwwroot\\_framework\\ToDoList.Blazor.Wasm.pdb",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "37780"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Tfw05J/QU7TBn4hXIQLVjj6J79q6jaY3LBQH8r/Of6k=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 10:06:29 GMT"
+          "Value": "Thu, 08 May 2025 15:26:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -70772,7 +71452,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "rmcvikpw2k"
+          "Value": "dolfdhd17y"
         },
         {
           "Name": "label",
@@ -70780,18 +71460,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Tfw05J/QU7TBn4hXIQLVjj6J79q6jaY3LBQH8r/Of6k="
+          "Value": "sha256-g8NhfyA2F1fEHjaduFaSToyigIf161YpoGD5R1BOrow="
         }
       ]
     },
     {
-      "Route": "_framework/ToDoList.Blazor.Wasm.rmcvikpw2k.pdb",
-      "AssetFile": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\obj\\Debug\\net9.0\\compressed\\kojv9nc9nv-rmcvikpw2k.gz",
+      "Route": "_framework/ToDoList.Blazor.Wasm.dolfdhd17y.pdb",
+      "AssetFile": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\obj\\Debug\\net9.0\\compressed\\kojv9nc9nv-dolfdhd17y.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000035886026"
+          "Quality": "0.000033285624"
         }
       ],
       "ResponseHeaders": [
@@ -70801,15 +71481,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "27865"
+          "Value": "30042"
         },
         {
           "Name": "ETag",
-          "Value": "\"78rNA515m+Sxc+M7GGKiKqUfheFKTM7SPQMrlQFu5rc=\""
+          "Value": "\"PFvVsppptmafBjAP/sFspfHXM86b1UTxO4BOi8a6eJA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 10:06:30 GMT"
+          "Value": "Thu, 08 May 2025 15:26:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -70829,13 +71509,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"Tfw05J/QU7TBn4hXIQLVjj6J79q6jaY3LBQH8r/Of6k=\""
+          "Value": "W/\"g8NhfyA2F1fEHjaduFaSToyigIf161YpoGD5R1BOrow=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "rmcvikpw2k"
+          "Value": "dolfdhd17y"
         },
         {
           "Name": "label",
@@ -70843,13 +71523,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Tfw05J/QU7TBn4hXIQLVjj6J79q6jaY3LBQH8r/Of6k="
+          "Value": "sha256-g8NhfyA2F1fEHjaduFaSToyigIf161YpoGD5R1BOrow="
         }
       ]
     },
     {
-      "Route": "_framework/ToDoList.Blazor.Wasm.rmcvikpw2k.pdb.gz",
-      "AssetFile": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\obj\\Debug\\net9.0\\compressed\\kojv9nc9nv-rmcvikpw2k.gz",
+      "Route": "_framework/ToDoList.Blazor.Wasm.dolfdhd17y.pdb.gz",
+      "AssetFile": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\obj\\Debug\\net9.0\\compressed\\kojv9nc9nv-dolfdhd17y.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -70858,7 +71538,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "27865"
+          "Value": "30042"
         },
         {
           "Name": "Content-Type",
@@ -70866,11 +71546,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"78rNA515m+Sxc+M7GGKiKqUfheFKTM7SPQMrlQFu5rc=\""
+          "Value": "\"PFvVsppptmafBjAP/sFspfHXM86b1UTxO4BOi8a6eJA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 10:06:30 GMT"
+          "Value": "Thu, 08 May 2025 15:26:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -70888,7 +71568,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "rmcvikpw2k"
+          "Value": "dolfdhd17y"
         },
         {
           "Name": "label",
@@ -70896,12 +71576,149 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-78rNA515m+Sxc+M7GGKiKqUfheFKTM7SPQMrlQFu5rc="
+          "Value": "sha256-PFvVsppptmafBjAP/sFspfHXM86b1UTxO4BOi8a6eJA="
         }
       ]
     },
     {
-      "Route": "_framework/ToDoList.Blazor.Wasm.wasm",
+      "Route": "_framework/ToDoList.Blazor.Wasm.pdb",
+      "AssetFile": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\bin\\Debug\\net9.0\\wwwroot\\_framework\\ToDoList.Blazor.Wasm.pdb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41280"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"g8NhfyA2F1fEHjaduFaSToyigIf161YpoGD5R1BOrow=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 15:26:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-g8NhfyA2F1fEHjaduFaSToyigIf161YpoGD5R1BOrow="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/ToDoList.Blazor.Wasm.pdb",
+      "AssetFile": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\obj\\Debug\\net9.0\\compressed\\kojv9nc9nv-dolfdhd17y.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000033285624"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30042"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PFvVsppptmafBjAP/sFspfHXM86b1UTxO4BOi8a6eJA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 15:26:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"g8NhfyA2F1fEHjaduFaSToyigIf161YpoGD5R1BOrow=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-g8NhfyA2F1fEHjaduFaSToyigIf161YpoGD5R1BOrow="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/ToDoList.Blazor.Wasm.pdb.gz",
+      "AssetFile": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\obj\\Debug\\net9.0\\compressed\\kojv9nc9nv-dolfdhd17y.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30042"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PFvVsppptmafBjAP/sFspfHXM86b1UTxO4BOi8a6eJA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 15:26:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-PFvVsppptmafBjAP/sFspfHXM86b1UTxO4BOi8a6eJA="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/ToDoList.Blazor.Wasm.szn2vwku7v.wasm",
       "AssetFile": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\bin\\Debug\\net9.0\\wwwroot\\_framework\\ToDoList.Blazor.Wasm.wasm",
       "Selectors": [],
       "ResponseHeaders": [
@@ -70911,7 +71728,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "56085"
+          "Value": "63253"
         },
         {
           "Name": "Content-Type",
@@ -70919,148 +71736,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"IMLvLM6TB6L/Z6t+XyLTLBjhz+q/SqNOYKyBI/6B3Cs=\""
+          "Value": "\"+KRskYGHaOFOsYe92adYtadiagwho44OHJDQNA74Jxo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 09:38:12 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-IMLvLM6TB6L/Z6t+XyLTLBjhz+q/SqNOYKyBI/6B3Cs="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/ToDoList.Blazor.Wasm.wasm",
-      "AssetFile": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\obj\\Debug\\net9.0\\compressed\\eempxw0mjw-wcxwpdcsq0.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000045291906"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "22078"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Mujsrsyd4wj57bpkmrkkIGYsxNo2uM39610si65jGv0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 09:38:13 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/wasm"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"IMLvLM6TB6L/Z6t+XyLTLBjhz+q/SqNOYKyBI/6B3Cs=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-IMLvLM6TB6L/Z6t+XyLTLBjhz+q/SqNOYKyBI/6B3Cs="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/ToDoList.Blazor.Wasm.wasm.gz",
-      "AssetFile": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\obj\\Debug\\net9.0\\compressed\\eempxw0mjw-wcxwpdcsq0.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "22078"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/wasm"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Mujsrsyd4wj57bpkmrkkIGYsxNo2uM39610si65jGv0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 09:38:13 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-Mujsrsyd4wj57bpkmrkkIGYsxNo2uM39610si65jGv0="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/ToDoList.Blazor.Wasm.wcxwpdcsq0.wasm",
-      "AssetFile": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\bin\\Debug\\net9.0\\wwwroot\\_framework\\ToDoList.Blazor.Wasm.wasm",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "56085"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/wasm"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"IMLvLM6TB6L/Z6t+XyLTLBjhz+q/SqNOYKyBI/6B3Cs=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 09:38:12 GMT"
+          "Value": "Thu, 08 May 2025 15:26:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -71070,7 +71750,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "wcxwpdcsq0"
+          "Value": "szn2vwku7v"
         },
         {
           "Name": "label",
@@ -71078,18 +71758,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-IMLvLM6TB6L/Z6t+XyLTLBjhz+q/SqNOYKyBI/6B3Cs="
+          "Value": "sha256-+KRskYGHaOFOsYe92adYtadiagwho44OHJDQNA74Jxo="
         }
       ]
     },
     {
-      "Route": "_framework/ToDoList.Blazor.Wasm.wcxwpdcsq0.wasm",
-      "AssetFile": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\obj\\Debug\\net9.0\\compressed\\eempxw0mjw-wcxwpdcsq0.gz",
+      "Route": "_framework/ToDoList.Blazor.Wasm.szn2vwku7v.wasm",
+      "AssetFile": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\obj\\Debug\\net9.0\\compressed\\eempxw0mjw-szn2vwku7v.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000045291906"
+          "Quality": "0.000041098142"
         }
       ],
       "ResponseHeaders": [
@@ -71099,15 +71779,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "22078"
+          "Value": "24331"
         },
         {
           "Name": "ETag",
-          "Value": "\"Mujsrsyd4wj57bpkmrkkIGYsxNo2uM39610si65jGv0=\""
+          "Value": "\"/N9j44/a7cD+npZ42Qq0TghNGYPxcKVICLXnsbOllKM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 09:38:13 GMT"
+          "Value": "Thu, 08 May 2025 15:26:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -71127,13 +71807,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"IMLvLM6TB6L/Z6t+XyLTLBjhz+q/SqNOYKyBI/6B3Cs=\""
+          "Value": "W/\"+KRskYGHaOFOsYe92adYtadiagwho44OHJDQNA74Jxo=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "wcxwpdcsq0"
+          "Value": "szn2vwku7v"
         },
         {
           "Name": "label",
@@ -71141,13 +71821,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-IMLvLM6TB6L/Z6t+XyLTLBjhz+q/SqNOYKyBI/6B3Cs="
+          "Value": "sha256-+KRskYGHaOFOsYe92adYtadiagwho44OHJDQNA74Jxo="
         }
       ]
     },
     {
-      "Route": "_framework/ToDoList.Blazor.Wasm.wcxwpdcsq0.wasm.gz",
-      "AssetFile": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\obj\\Debug\\net9.0\\compressed\\eempxw0mjw-wcxwpdcsq0.gz",
+      "Route": "_framework/ToDoList.Blazor.Wasm.szn2vwku7v.wasm.gz",
+      "AssetFile": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\obj\\Debug\\net9.0\\compressed\\eempxw0mjw-szn2vwku7v.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -71156,7 +71836,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "22078"
+          "Value": "24331"
         },
         {
           "Name": "Content-Type",
@@ -71164,11 +71844,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Mujsrsyd4wj57bpkmrkkIGYsxNo2uM39610si65jGv0=\""
+          "Value": "\"/N9j44/a7cD+npZ42Qq0TghNGYPxcKVICLXnsbOllKM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 08 May 2025 09:38:13 GMT"
+          "Value": "Thu, 08 May 2025 15:26:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -71186,7 +71866,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "wcxwpdcsq0"
+          "Value": "szn2vwku7v"
         },
         {
           "Name": "label",
@@ -71194,7 +71874,144 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Mujsrsyd4wj57bpkmrkkIGYsxNo2uM39610si65jGv0="
+          "Value": "sha256-/N9j44/a7cD+npZ42Qq0TghNGYPxcKVICLXnsbOllKM="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/ToDoList.Blazor.Wasm.wasm",
+      "AssetFile": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\bin\\Debug\\net9.0\\wwwroot\\_framework\\ToDoList.Blazor.Wasm.wasm",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "63253"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+KRskYGHaOFOsYe92adYtadiagwho44OHJDQNA74Jxo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 15:26:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+KRskYGHaOFOsYe92adYtadiagwho44OHJDQNA74Jxo="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/ToDoList.Blazor.Wasm.wasm",
+      "AssetFile": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\obj\\Debug\\net9.0\\compressed\\eempxw0mjw-szn2vwku7v.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000041098142"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "24331"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/N9j44/a7cD+npZ42Qq0TghNGYPxcKVICLXnsbOllKM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 15:26:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"+KRskYGHaOFOsYe92adYtadiagwho44OHJDQNA74Jxo=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+KRskYGHaOFOsYe92adYtadiagwho44OHJDQNA74Jxo="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/ToDoList.Blazor.Wasm.wasm.gz",
+      "AssetFile": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\obj\\Debug\\net9.0\\compressed\\eempxw0mjw-szn2vwku7v.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "24331"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/N9j44/a7cD+npZ42Qq0TghNGYPxcKVICLXnsbOllKM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 08 May 2025 15:26:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-/N9j44/a7cD+npZ42Qq0TghNGYPxcKVICLXnsbOllKM="
         }
       ]
     },
@@ -85365,304 +86182,6 @@
         {
           "Name": "integrity",
           "Value": "sha256-gp//nNUGST825wtTlsL1IhgPihXiFMXhlSaSfiykClg="
-        }
-      ]
-    },
-    {
-      "Route": "sample-data/weather.iag0ou56lh.json",
-      "AssetFile": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\obj\\Debug\\net9.0\\compressed\\64ntm23dwm-iag0ou56lh.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.006493506494"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "153"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"HD3vAUwurZXW96vdgG5RVLhMjmVeSgBs4iKLSw2+Uwk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 07 May 2025 08:46:38 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/json"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"enKgCMkYmCpfEcmg6Annbmc40VZ/A6aYYSQjZfVn2cU=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "iag0ou56lh"
-        },
-        {
-          "Name": "label",
-          "Value": "sample-data/weather.json"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-enKgCMkYmCpfEcmg6Annbmc40VZ/A6aYYSQjZfVn2cU="
-        }
-      ]
-    },
-    {
-      "Route": "sample-data/weather.iag0ou56lh.json",
-      "AssetFile": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\wwwroot\\sample-data\\weather.json",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "453"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/json"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"enKgCMkYmCpfEcmg6Annbmc40VZ/A6aYYSQjZfVn2cU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 07 May 2025 08:46:38 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "iag0ou56lh"
-        },
-        {
-          "Name": "label",
-          "Value": "sample-data/weather.json"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-enKgCMkYmCpfEcmg6Annbmc40VZ/A6aYYSQjZfVn2cU="
-        }
-      ]
-    },
-    {
-      "Route": "sample-data/weather.iag0ou56lh.json.gz",
-      "AssetFile": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\obj\\Debug\\net9.0\\compressed\\64ntm23dwm-iag0ou56lh.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "153"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/json"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"HD3vAUwurZXW96vdgG5RVLhMjmVeSgBs4iKLSw2+Uwk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 07 May 2025 08:46:38 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "iag0ou56lh"
-        },
-        {
-          "Name": "label",
-          "Value": "sample-data/weather.json.gz"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-HD3vAUwurZXW96vdgG5RVLhMjmVeSgBs4iKLSw2+Uwk="
-        }
-      ]
-    },
-    {
-      "Route": "sample-data/weather.json",
-      "AssetFile": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\obj\\Debug\\net9.0\\compressed\\64ntm23dwm-iag0ou56lh.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.006493506494"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "153"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"HD3vAUwurZXW96vdgG5RVLhMjmVeSgBs4iKLSw2+Uwk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 07 May 2025 08:46:38 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/json"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"enKgCMkYmCpfEcmg6Annbmc40VZ/A6aYYSQjZfVn2cU=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-enKgCMkYmCpfEcmg6Annbmc40VZ/A6aYYSQjZfVn2cU="
-        }
-      ]
-    },
-    {
-      "Route": "sample-data/weather.json",
-      "AssetFile": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\wwwroot\\sample-data\\weather.json",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "453"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/json"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"enKgCMkYmCpfEcmg6Annbmc40VZ/A6aYYSQjZfVn2cU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 07 May 2025 08:46:38 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-enKgCMkYmCpfEcmg6Annbmc40VZ/A6aYYSQjZfVn2cU="
-        }
-      ]
-    },
-    {
-      "Route": "sample-data/weather.json.gz",
-      "AssetFile": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.Blazor.Wasm\\obj\\Debug\\net9.0\\compressed\\64ntm23dwm-iag0ou56lh.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "153"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/json"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"HD3vAUwurZXW96vdgG5RVLhMjmVeSgBs4iKLSw2+Uwk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 07 May 2025 08:46:38 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-HD3vAUwurZXW96vdgG5RVLhMjmVeSgBs4iKLSw2+Uwk="
         }
       ]
     },

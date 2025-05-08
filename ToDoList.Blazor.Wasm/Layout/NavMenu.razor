@@ -1,4 +1,9 @@
 ﻿@inject NavigationManager Navigation
+@using Services
+@using Models
+@inject AuthService AuthService
+@inject Blazored.LocalStorage.ILocalStorageService LocalStorage
+@implements IDisposable
 
 <div class="top-row ps-3 navbar navbar-dark">
     <div class="container-fluid">
@@ -10,15 +15,70 @@
 
 <div class="nav-scrollable" onclick="document.querySelector('.navbar-toggler').click()">
     <nav class="nav flex-column">
+
+        @if (!isAuthenticated)
+        {
         <div class="nav-item px-3">
             <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
                 <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Home
             </NavLink>
         </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="/todolist">
-                <span class="oi oi-list-rich" aria-hidden="true"></span> ToDo List
-            </NavLink>
-        </div>
+        }
+        
+        @if (isAuthenticated)
+        {
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="todolist">
+                    <span class="oi oi-list-rich" aria-hidden="true"></span> ToDo List
+                </NavLink>
+            </div>
+        }
+        else
+        {
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="register">
+                    <span class="bi bi-box-arrow-in-right" aria-hidden="true"></span> Registrati
+                </NavLink>
+            </div>
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="login">
+                    <span class="bi bi-box-arrow-in-right" aria-hidden="true"></span> Login
+                </NavLink>
+            </div>
+        }
     </nav>
 </div>
+
+@code {
+    private bool isAuthenticated = false;
+    
+    protected override async Task OnInitializedAsync()
+    {
+        //stato iniziale
+        isAuthenticated = await AuthService.IsAuthenticatedAsync();
+        
+        //cambiamento dello stato
+        AuthService.OnAuthStateChanged += HandleAuthStateChanged;
+    }
+
+    private void HandleAuthStateChanged()
+    {
+        //aggiorna lo stato
+        InvokeAsync(async () =>
+        {
+            isAuthenticated = await AuthService.IsAuthenticatedAsync();
+            StateHasChanged();
+        });
+    }
+
+    private async Task LogoutAsync()
+    {
+        await AuthService.LogoutAsync();
+        Navigation.NavigateTo("/", true);
+    }
+
+    public void Dispose()
+    {
+        AuthService.OnAuthStateChanged -= HandleAuthStateChanged;
+    }
+}

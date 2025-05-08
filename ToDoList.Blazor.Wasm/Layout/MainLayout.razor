@@ -9,16 +9,27 @@
     </div>
 
     <main>
-        <div class="top-row px-4">
+        @if (!isAuthenticated)
+        {
+            <div class="top-row px-4">
                 <div class="auth-buttons">
-                        <NavLink class="nav-link auth-button register" href="/register">
+                    <NavLink class="nav-link auth-button register" href="/register">
                         <span class="bi bi-person-plus"></span> Registrati
-                        </NavLink>
-                        <NavLink class="nav-link auth-button login" href="/login">
-                            <span class="bi bi-person-plus"></span> Login
-                        </NavLink>
+                    </NavLink>
+                    <NavLink class="nav-link auth-button login" href="/login">
+                        <span class="bi bi-person-plus"></span> Login
+                    </NavLink>
                 </div>
-        </div>
+            </div>
+        }
+        else
+        {
+            <div class="top-row px-4">
+                <div class="auth-buttons">
+                    <NavLink class="nav-link auth-button logout" @onclick="Logout">Logout</NavLink>
+                </div>
+            </div>
+        }
 
         <article class="content px-4">
             @Body
@@ -31,3 +42,38 @@
     <a href="." class="reload">Reload</a>
     <span class="dismiss">🗙</span>
 </div>
+
+
+@code {
+    private bool isAuthenticated = false;
+    
+    protected override async Task OnInitializedAsync()
+    {
+        //verifica lo stato di autenticazione iniziale
+        isAuthenticated = await AuthService.IsAuthenticatedAsync();
+        
+        //cambio stato autenticazione
+        AuthService.OnAuthStateChanged += HandleAuthStateChanged;
+    }
+
+    private void HandleAuthStateChanged()
+    {
+        //aggiorna lo stato
+        InvokeAsync(async () =>
+        {
+            isAuthenticated = await AuthService.IsAuthenticatedAsync();
+            StateHasChanged();
+        });
+    }
+
+    private async Task Logout()
+    {
+        await AuthService.LogoutAsync();
+        NavigationManager.NavigateTo("/");
+    }
+
+    public void Dispose()
+    {
+        AuthService.OnAuthStateChanged -= HandleAuthStateChanged;
+    }
+}
