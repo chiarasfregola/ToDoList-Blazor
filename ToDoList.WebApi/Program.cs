@@ -26,30 +26,41 @@ builder.Services.AddAuthentication(options =>
 })
 .AddJwtBearer(options =>
 {
+    var jwtKey = builder.Configuration["Jwt:Key"];
+    var jwtIssuer = builder.Configuration["Jwt:Issuer"];
+    var jwtAudience = builder.Configuration["Jwt:Audience"];
+
+    if (string.IsNullOrEmpty(jwtKey))
+        throw new Exception("JWT Key is missing in configuration");
+
     options.TokenValidationParameters = new TokenValidationParameters
     {
         ValidateIssuer = true,
         ValidateAudience = true,
         ValidateLifetime = true,
         ValidateIssuerSigningKey = true,
-        ValidIssuer = builder.Configuration["Jwt:Issuer"],
-        ValidAudience = builder.Configuration["Jwt:Audience"],
-        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(
-            builder.Configuration["Jwt:Key"] ?? throw new InvalidOperationException("JWT Key not found in configuration")
-        ))
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"])),
+        ValidIssuer = jwtIssuer,
+        ValidAudience = jwtAudience
+        
     };
 });
 
-// CORS PER BLAZOR WASM
-builder.Services.AddCors(options =>
+// CONFIGURAZIONE COOKIE (per API REST non è fondamentale, ma utile se usi Identity UI)
+builder.Services.ConfigureApplicationCookie(c =>
 {
-    options.AddPolicy("AllowBlazorClient", policy =>
+    c.Events.OnRedirectToLogin = ctx =>
     {
-        policy.WithOrigins("https://localhost:7233") // URL del frontend Blazor WASM
-              .AllowAnyMethod()
-              .AllowAnyHeader()
-              .AllowCredentials(); // se usi autenticazione con cookie o localStorage
-    });
+        if (ctx.Request.Path.StartsWithSegments("/api") && ctx.Response.StatusCode == 200)
+            ctx.Response.StatusCode = 401;
+        return Task.CompletedTask;
+    };
+    c.Events.OnRedirectToAccessDenied = ctx =>
+    {
+        if (ctx.Request.Path.StartsWithSegments("/api") && ctx.Response.StatusCode == 200)
+            ctx.Response.StatusCode = 403;
+        return Task.CompletedTask;
+    };
 });
 
 // CONTROLLERS
@@ -90,24 +101,22 @@ builder.Services.AddSwaggerGen(options =>
     });
 });
 
-// BUILD
 var app = builder.Build();
 
-// MIDDLEWARE
+// CONFIGURAZIONE PIPELINE
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseSwaggerUI(c =>
-    {
-        c.SwaggerEndpoint("/swagger/v1/swagger.json", "ToDo API v1");
-        c.SupportedSubmitMethods(new[] { SubmitMethod.Get, SubmitMethod.Post, SubmitMethod.Put, SubmitMethod.Delete });
-        c.DocumentTitle = "ToDo API Documentation";
-    });
+    app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+// CORS
+app.UseCors(cors => cors
+    .AllowAnyOrigin()
+    .AllowAnyMethod()
+    .AllowAnyHeader());
 
-app.UseCors("AllowBlazorClient");
+app.UseHttpsRedirection();
 
 app.UseAuthentication();
 app.UseAuthorization();

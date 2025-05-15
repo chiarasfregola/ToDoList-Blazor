@@ -1,0 +1,9 @@
+<header>
+  <div>
+    <h3>La tua ToDo List</h3>
+  </div>
+  <div *ngIf="isAuthenticated()">
+    <button class="btn-logout" (click)="logout()">Logout</button>
+  </div>
+</header>
+

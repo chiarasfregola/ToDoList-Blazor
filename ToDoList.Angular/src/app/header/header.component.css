@@ -1,0 +1,42 @@
+header {
+    position: fixed;/* Header fisso */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Sopra tutto */
+    display: flex;
+    padding-inline: 30px;
+    padding-block: 10px;
+    background-color: #c4aceb;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Wrapper div interno per allineamento */
+header > div {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+/* Pulsante di logout personalizzato */
+button.btn-logout {
+  all: unset; /* Resetta tutte le proprietà */
+  background-color: #8d58e0;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  text-align: center;
+  user-select: none;
+}
+
+button.btn-logout:hover {
+  background-color: #c7a7ff;
+}
+

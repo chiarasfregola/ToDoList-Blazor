@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iGfS4qDQBKI=",
+  "dgSpecHash": "kPxtsBEZb2s=",
   "success": true,
-  "projectFilePath": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.WebApi\\ToDoList.WebApi.csproj",
+  "projectFilePath": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList.Angular\\ToDoList.WebApi\\ToDoList.WebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\msfregola\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\msfregola\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\9.0.4\\microsoft.aspnetcore.authentication.jwtbearer.9.0.4.nupkg.sha512",

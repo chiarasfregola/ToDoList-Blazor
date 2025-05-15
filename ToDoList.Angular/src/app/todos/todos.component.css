@@ -1,0 +1,195 @@
+/* Styling globale */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f3f4f6;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Contenitore principale */
+.container {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Box centrale */
+/* Box centrale - aggiornato */
+.rounded-box {
+    background-color: #ffffff;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding: 30px;
+    width: 100%;
+    max-width: 800px; /* più largo */
+    min-height: 750px;
+    margin: 0 auto; /* centratura */
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* Input + Bottone Aggiungi */
+.add_todo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.add_todo input {
+    flex: 1;
+    padding: 10px 12px;
+    border: 1.5px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+    background-color: #f0ece7;
+}
+
+.add_todo button {
+    padding: 10px 20px;
+    background-color: #55de87;
+    border: none;
+    color: white;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add_todo button:hover {
+    background-color: #21b859;
+}
+
+/* Lista ToDo */
+.todos {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Singolo To-Do */
+.todo_item {
+    background-color: #f9fafb;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    word-break: break-word;
+}
+
+/* Colore e ombra quando completato */
+.todo_item.completed {
+    background-color: rgba(239, 68, 68, 0.15);
+    box-shadow: 0 0 10px rgba(239, 68, 68, 0.4);
+}
+
+/* Testo */
+.todo_item span {
+    flex: 1;
+    min-width: 0;
+    overflow-wrap: break-word;
+}
+
+/* Testo sbarrato */
+.todo_item.completed span {
+    text-decoration: line-through;
+    color: gray;
+}
+
+/* Checkbox */
+.todo_item input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Bottone Elimina */
+.todo_item button {
+    background-color: #ef4444;
+    border: none;
+    color: white;
+    font-size: 14px;
+    border-radius: 6px;
+    padding: 6px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    white-space: nowrap;
+}
+
+.todo_item button:hover {
+    background-color: #dc2626;
+}
+
+/* Bottone Salva */
+.save-btn {
+    background-color: #55de87;
+    color: white;
+    border-radius: 6px;
+    padding: 8px 14px;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+    border: none;
+}
+
+.save-btn:hover {
+    background-color: #21b859;
+}
+
+/* Rimuove evidenziazione */
+.todo_item span:focus,
+.todo_item span:active {
+    outline: none;
+    box-shadow: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/* Container input modifica */
+.edit-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .rounded-box {
+        padding: 20px;
+    }
+
+    .add_todo {
+        flex-direction: column;
+    }
+
+    .add_todo input,
+    .add_todo button {
+        width: 100%;
+    }
+
+    .todo_item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .todo_item button {
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    .edit-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .edit-container input,
+    .save-btn {
+        width: 100%;
+        margin: 0;
+    }
+}

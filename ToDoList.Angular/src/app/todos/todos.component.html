@@ -1,0 +1,44 @@
+<div class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-10 col-lg-8 col-xl-7">
+      <div class="rounded-box rounded-5 border-0 shadow-lg bg-white">
+        <div class="d-flex justify-content-start align-items-center">
+          <div class="p-5 w-100">
+            <h6>Aggiungi un nuovo impegno alla tua ToDoList:</h6>
+            <div class="add_todo">
+              <input [(ngModel)]="newTodoTitle" (keyup.enter)="addTodo()" class="rounded-4" />
+              <button (click)="addTodo()" class="btn btn-success rounded-4">Aggiungi</button>
+            </div>
+
+            <!-- Spazio tra input e lista -->
+            <div class="mb-4"></div>
+
+            <ul class="todos">
+              <li *ngFor="let todo of sortedTodoItems"
+                  class="todo_item"
+                  [class.completed]="todo.isDone">
+
+                <input *ngIf="editTodoId !== todo.id" type="checkbox" [checked]="todo.isDone" (change)="updateToDo(todo)" />
+
+                <div *ngIf="editTodoId === todo.id" class="edit-container">
+                  <input [(ngModel)]="editTodoTitle"
+                         (keyup.enter)="saveTodoTitle(todo)"
+                         (keyup.esc)="cancelEdit()"
+                         class="form-control" autofocus />
+                  <button (click)="saveTodoTitle(todo)" class="btn btn-success save-btn">Salva</button>
+                </div>
+
+                <span *ngIf="editTodoId !== todo.id"
+                      (click)="editTodoTitleFn(todo)">
+                  {{ todo.title }}
+                </span>
+                <button *ngIf="editTodoId !== todo.id" (click)="deleteTodo(todo.id)">Elimina</button>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

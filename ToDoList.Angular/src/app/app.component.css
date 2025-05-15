@@ -1,0 +1,16 @@
+/* Sfondo bianco per tutto il contenuto */
+:host {
+  display: block;
+  min-height: 100vh;
+  background-color: rgb(251, 247, 255);
+  color: #333; /* testo scuro per leggibilità */
+  font-family: Arial, sans-serif; /* puoi personalizzare */
+  padding-top: 60px; /* se l’header è fixed, dai spazio sopra */
+}
+
+/* Se vuoi puoi stilizzare anche il main */
+main.main {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}

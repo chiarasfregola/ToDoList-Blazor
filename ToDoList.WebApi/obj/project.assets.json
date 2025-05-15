@@ -4050,11 +4050,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.WebApi\\ToDoList.WebApi.csproj",
+      "projectUniqueName": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList.Angular\\ToDoList.WebApi\\ToDoList.WebApi.csproj",
       "projectName": "ToDoList.WebApi",
-      "projectPath": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.WebApi\\ToDoList.WebApi.csproj",
+      "projectPath": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList.Angular\\ToDoList.WebApi\\ToDoList.WebApi.csproj",
       "packagesPath": "C:\\Users\\msfregola\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList\\ToDoList.WebApi\\obj\\",
+      "outputPath": "C:\\Users\\msfregola\\OneDrive - Contrader Srl\\Desktop\\cs12dotnet8\\ToDoList.Angular\\ToDoList.WebApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

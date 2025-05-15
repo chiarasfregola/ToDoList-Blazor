@@ -1,0 +1,22 @@
+<div class="register-wrapper">
+  <div class="text-dark mb-4">
+    <h2>Registrazione</h2>
+  </div>
+
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div class="mb-3">
+      <input type="email" class="form-control bg-body-secondary" placeholder="Email" formControlName="email">
+    </div>
+    <div class="mb-3">
+      <input type="password" class="form-control bg-body-secondary" placeholder="Password" formControlName="password">
+    </div>
+    <div class="mt-3">
+      <button type="submit" class="btn btn-success w-100 rounded-4">Registrati</button>
+    </div>
+  </form>
+
+  <div class="mt-4 text-dark">
+    <h6 style="padding-bottom: 4px;">Hai già un account? Accedi</h6>
+    <button class="btn btn-warning w-100 rounded-4" (click)="goBack()">Login</button>
+  </div>
+</div>

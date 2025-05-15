@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\ToDoList.Blazor.Wasm.props" />
-</Project>
